@@ -1172,3 +1172,4 @@ const questions = [
     options: ["İzmir", "Ankara", "İstanbul", "Antalya"],
     answer: 2
   }
+];
