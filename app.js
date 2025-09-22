@@ -1,71 +1,60 @@
-// app.js
-
 let currentQuestion = 0;
 let correctCount = 0;
 let wrongCount = 0;
 let score = 0;
 
-const questionEl = document.getElementById("question");
-const optionsEl = document.getElementById("options");
-const messageEl = document.getElementById("message");
-const resultEl = document.getElementById("result");
-
-const correctSound = document.getElementById("correctSound");
-const wrongSound = document.getElementById("wrongSound");
-
-function loadQuestion() {
-  if (currentQuestion < questions.length) {
-    const q = questions[currentQuestion];
-    questionEl.textContent = (currentQuestion + 1) + ". " + q.q;
-
-    optionsEl.innerHTML = "";
-    q.options.forEach((opt, index) => {
-      const button = document.createElement("button");
-      button.classList.add("option");
-      button.textContent = opt;
-      button.onclick = () => checkAnswer(index);
-      optionsEl.appendChild(button);
-    });
-  } else {
-    // oyun bitti
-    questionEl.textContent = "🎉 Oyun Bitti!";
-    optionsEl.innerHTML = "";
-    messageEl.textContent = "";
-    resultEl.textContent = `Toplam Doğru: ${correctCount} | Yanlış: ${wrongCount} | Puan: ${score}`;
+function showQuestion() {
+  if (currentQuestion >= questions.length) {
+    document.getElementById("result").innerText =
+      "🎉 Oyun bitti! Toplam Puan: " + score;
+    document.getElementById("question").innerText = "";
+    document.getElementById("options").innerHTML = "";
+    return;
   }
+
+  let q = questions[currentQuestion];
+  document.getElementById("question").innerText = q.q;
+
+  let optionsDiv = document.getElementById("options");
+  optionsDiv.innerHTML = "";
+
+  q.options.forEach((option, index) => {
+    let btn = document.createElement("button");
+    btn.className = "option";
+    btn.innerText = option;
+    btn.onclick = () => checkAnswer(index, btn);
+    optionsDiv.appendChild(btn);
+  });
 }
 
-function checkAnswer(selected) {
-  const q = questions[currentQuestion];
-  const buttons = document.querySelectorAll(".option");
+function checkAnswer(selected, btn) {
+  let q = questions[currentQuestion];
+  let buttons = document.querySelectorAll(".option");
 
   if (selected === q.answer) {
-    buttons[selected].classList.add("correct");
+    btn.classList.add("correct");
     correctCount++;
     score += 10;
-    correctSound.play();
-    messageEl.textContent = "✅ Doğru!";
+    document.getElementById("correctSound").play();
   } else {
-    buttons[selected].classList.add("wrong");
-    buttons[q.answer].classList.add("correct");
+    btn.classList.add("wrong");
     wrongCount++;
-    wrongSound.play();
-    messageEl.textContent = "❌ Yanlış!";
+    document.getElementById("wrongSound").play();
+    // Doğru cevabı yeşil işaretle
+    buttons[q.answer].classList.add("correct");
   }
 
-  document.getElementById("correctCount").textContent = correctCount;
-  document.getElementById("wrongCount").textContent = wrongCount;
-  document.getElementById("score").textContent = score;
+  // Skorları güncelle
+  document.getElementById("correctCount").innerText = correctCount;
+  document.getElementById("wrongCount").innerText = wrongCount;
+  document.getElementById("score").innerText = score;
 
-  // butonları kilitle
-  buttons.forEach(btn => btn.disabled = true);
-
-  // 1.5 saniye sonra sonraki soruya geç
+  // 1 saniye sonra sonraki soruya geç
   setTimeout(() => {
     currentQuestion++;
-    loadQuestion();
-  }, 1500);
+    showQuestion();
+  }, 1000);
 }
 
-// oyunu başlat
-loadQuestion();
+// --- Oyunu Başlat ---
+showQuestion();
