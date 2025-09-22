@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bilgi Düellosu</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f0f2f5; margin:0; padding:0; }
-    #quiz { max-width: 600px; margin: 50px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    h1 { text-align: center; color: #2c3e50; }
-    #scoreboard { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 16px; font-weight: bold; }
-    .question { margin: 15px 0; font-size: 18px; font-weight: bold; }
-    button.option { display: block; width: 100%; padding: 10px; margin: 8px 0; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; background: #3498db; color: #fff; transition: 0.3s; }
-    button.option:hover { background: #2980b9; }
-    button.correct { background: #2ecc71 !important; }
-    button.wrong { background: #e74c3c !important; }
-    #message { text-align: center; font-size: 16px; margin-top: 10px; font-weight: bold; }
-    #result { text-align: center; font-size: 20px; font-weight: bold; margin-top: 20px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Düellosu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyanız varsa -->
 </head>
 <body>
-  <div id="quiz">
-    <h1>Bilgi Düellosu</h1>
-    <div id="scoreboard">
-      <span>✅ Doğru: <span id="correctCount">0</span></span>
-      <span>❌ Yanlış: <span id="wrongCount">0</span></span>
-      <span>⭐ Puan: <span id="score">0</span></span>
+    <div class="container">
+        <h1>Bilgi Düellosu</h1>
+        <div class="stats">
+            <span>✅ Doğru: <span id="correctCount">0</span></span>
+            <span>❌ Yanlış: <span id="wrongCount">0</span></span>
+            <span>⭐ Puan: <span id="score">0</span></span>
+        </div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="message"></div>
+        <div id="result"></div>
     </div>
-    <div id="question" class="question"></div>
-    <div id="options"></div>
-    <div id="message"></div>
-    <div id="result"></div>
-  </div>
 
-  <!-- Ses Efektleri -->
-  <audio id="correctSound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
-  <audio id="wrongSound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
+    <audio id="correctSound" src="correctSound.mp3"></audio>
+    <audio id="wrongSound" src="wrongSound.mp3"></audio>
 
-  <!-- Soru listesi ve uygulama mantığı -->
-  <script src="questions.js"></script>
-  <script src="app.js"></script>
+    <!-- Script dosyalarını sırayla ekle -->
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
