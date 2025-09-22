@@ -1,60 +1,78 @@
+// app.js
 let currentQuestion = 0;
 let correctCount = 0;
 let wrongCount = 0;
 let score = 0;
 
-function showQuestion() {
-  if (currentQuestion >= questions.length) {
-    document.getElementById("result").innerText =
-      "🎉 Oyun bitti! Toplam Puan: " + score;
-    document.getElementById("question").innerText = "";
-    document.getElementById("options").innerHTML = "";
-    return;
-  }
+const questionEl = document.getElementById("question");
+const optionsEl = document.getElementById("options");
+const messageEl = document.getElementById("message");
+const resultEl = document.getElementById("result");
 
-  let q = questions[currentQuestion];
-  document.getElementById("question").innerText = q.q;
+const correctSound = document.getElementById("correctSound");
+const wrongSound = document.getElementById("wrongSound");
 
-  let optionsDiv = document.getElementById("options");
-  optionsDiv.innerHTML = "";
+function loadQuestion() {
+    if (typeof questions === 'undefined') {
+        console.error("Hata: questions array'i tanımlı değil. questions.js dosyasını kontrol edin.");
+        questionEl.textContent = "Hata: Sorular yüklenemedi.";
+        return;
+    }
 
-  q.options.forEach((option, index) => {
-    let btn = document.createElement("button");
-    btn.className = "option";
-    btn.innerText = option;
-    btn.onclick = () => checkAnswer(index, btn);
-    optionsDiv.appendChild(btn);
-  });
+    if (currentQuestion < questions.length) {
+        const q = questions[currentQuestion];
+        questionEl.textContent = (currentQuestion + 1) + ". " + q.q;
+
+        optionsEl.innerHTML = "";
+        q.options.forEach((opt, index) => {
+            const button = document.createElement("button");
+            button.classList.add("option");
+            button.textContent = opt;
+            button.onclick = () => checkAnswer(index);
+            optionsEl.appendChild(button);
+        });
+    } else {
+        // Oyun bitti
+        questionEl.textContent = "🎉 Oyun Bitti!";
+        optionsEl.innerHTML = "";
+        messageEl.textContent = "";
+        resultEl.textContent = `Toplam Doğru: ${correctCount} | Yanlış: ${wrongCount} | Puan: ${score}`;
+    }
 }
 
-function checkAnswer(selected, btn) {
-  let q = questions[currentQuestion];
-  let buttons = document.querySelectorAll(".option");
+function checkAnswer(selected) {
+    const q = questions[currentQuestion];
+    const buttons = document.querySelectorAll(".option");
 
-  if (selected === q.answer) {
-    btn.classList.add("correct");
-    correctCount++;
-    score += 10;
-    document.getElementById("correctSound").play();
-  } else {
-    btn.classList.add("wrong");
-    wrongCount++;
-    document.getElementById("wrongSound").play();
-    // Doğru cevabı yeşil işaretle
-    buttons[q.answer].classList.add("correct");
-  }
+    if (selected === q.answer) {
+        buttons[selected].classList.add("correct");
+        correctCount++;
+        score += 10;
+        if (correctSound) correctSound.play().catch(() => console.log("Doğru sesi oynatılamadı."));
+        messageEl.textContent = "✅ Doğru!";
+    } else {
+        buttons[selected].classList.add("wrong");
+        buttons[q.answer].classList.add("correct");
+        wrongCount++;
+        if (wrongSound) wrongSound.play().catch(() => console.log("Yanlış sesi oynatılamadı."));
+        messageEl.textContent = "❌ Yanlış!";
+    }
 
-  // Skorları güncelle
-  document.getElementById("correctCount").innerText = correctCount;
-  document.getElementById("wrongCount").innerText = wrongCount;
-  document.getElementById("score").innerText = score;
+    document.getElementById("correctCount").textContent = correctCount;
+    document.getElementById("wrongCount").textContent = wrongCount;
+    document.getElementById("score").textContent = score;
 
-  // 1 saniye sonra sonraki soruya geç
-  setTimeout(() => {
-    currentQuestion++;
-    showQuestion();
-  }, 1000);
+    // Butonları kilitle
+    buttons.forEach(btn => btn.disabled = true);
+
+    // 1.5 saniye sonra sonraki soruya geç
+    setTimeout(() => {
+        currentQuestion++;
+        loadQuestion();
+    }, 1500);
 }
 
-// --- Oyunu Başlat ---
-showQuestion();
+// DOM yüklendiğinde oyunu başlat
+document.addEventListener("DOMContentLoaded", () => {
+    loadQuestion();
+});
