@@ -1,3506 +1,1174 @@
-// questions.js
-const questions = [];
-
-// 1
-questions.push({ 
-  q: "Türkiye’nin başkenti neresidir?", 
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"], 
-  answer: 1 
-});
-
-// 2
-questions.push({ 
-  q: "Cumhuriyet hangi yıl ilan edilmiştir?", 
-  options: ["1920", "1923", "1938", "1919"], 
-  answer: 1 
-});
-
-// 3
-questions.push({ 
-  q: "İstiklal Marşı’nın yazarı kimdir?", 
-  options: ["Tevfik Fikret", "Ziya Gökalp", "Mehmet Akif Ersoy", "Namık Kemal"], 
-  answer: 2 
-});
-
-// 4
-questions.push({ 
-  q: "Dünyanın en büyük okyanusu hangisidir?", 
-  options: ["Atlas", "Hint", "Büyük Okyanus (Pasifik)", "Kuzey Buz Denizi"], 
-  answer: 2 
-});
-
-// 5
-questions.push({ 
-  q: "İnsan vücudundaki en büyük organ hangisidir?", 
-  options: ["Kalp", "Karaciğer", "Beyin", "Deri"], 
-  answer: 3 
-});
-
-// 6
-questions.push({ 
-  q: "Türkiye’nin en uzun nehri hangisidir?", 
-  options: ["Kızılırmak", "Fırat", "Sakarya", "Dicle"], 
-  answer: 0 
-});
-
-// 7
-questions.push({ 
-  q: "Aşağıdakilerden hangisi bir elementtir?", 
-  options: ["Su", "Tuz", "Oksijen", "Şeker"], 
-  answer: 2 
-});
-
-// 8
-questions.push({ 
-  q: "Türkiye’nin en yüksek dağı hangisidir?", 
-  options: ["Ağrı Dağı", "Erciyes", "Kaçkar", "Uludağ"], 
-  answer: 0 
-});
-
-// 9
-questions.push({ 
-  q: "Bir yılda kaç gün vardır (artık yıl hariç)?", 
-  options: ["364", "365", "366", "360"], 
-  answer: 1 
-});
-
-// 10
-questions.push({ 
-  q: "Hz. Muhammed’in (s.a.v) doğum yeri neresidir?", 
-  options: ["Medine", "Mekke", "Kudüs", "Taif"], 
-  answer: 1 
-});
-
-// 11
-questions.push({ 
-  q: "Türkiye’nin en kalabalık şehri hangisidir?", 
-  options: ["Ankara", "Bursa", "İstanbul", "İzmir"], 
-  answer: 2 
-});
-
-// 12
-questions.push({ 
-  q: "Yerçekimi kanununu bulan bilim insanı kimdir?", 
-  options: ["Newton", "Einstein", "Galileo", "Pascal"], 
-  answer: 0 
-});
-
-// 13
-questions.push({ 
-  q: "Bir futbol takımında sahada kaç oyuncu bulunur?", 
-  options: ["9", "10", "11", "12"], 
-  answer: 2 
-});
-
-// 14
-questions.push({ 
-  q: "Türkiye’nin üç tarafı hangi denizlerle çevrilidir?", 
-  options: [
-    "Marmara, Ege, Karadeniz", 
-    "Karadeniz, Akdeniz, Ege", 
-    "Akdeniz, Marmara, Ege", 
-    "Karadeniz, Marmara, Akdeniz"
-  ], 
-  answer: 1 
-});
-
-// 15
-questions.push({ 
-  q: "İlk Türk devletinin adı nedir?", 
-  options: ["Göktürkler", "Hunlar", "Selçuklular", "Osmanlı"], 
-  answer: 1 
-});
-
-// 16
-questions.push({ 
-  q: "Türkiye’nin yüzölçümü bakımından en büyük ili hangisidir?", 
-  options: ["Konya", "Ankara", "Sivas", "Erzurum"], 
-  answer: 0 
-});
-
-// 17
-questions.push({ 
-  q: "Hangi gezegen ‘Kızıl Gezegen’ olarak bilinir?", 
-  options: ["Mars", "Venüs", "Jüpiter", "Satürn"], 
-  answer: 0 
-});
-
-// 18
-questions.push({ 
-  q: "Türk bayrağındaki ay ve yıldız neyi simgeler?", 
-  options: ["Zafer ve bağımsızlık", "Barış ve özgürlük", "Huzur ve mutluluk", "Adalet ve eşitlik"], 
-  answer: 0 
-});
-
-// 19
-questions.push({ 
-  q: "Osmanlı Devleti hangi yılda kurulmuştur?", 
-  options: ["1299", "1453", "1071", "1517"], 
-  answer: 0 
-});
-
-// 20
-questions.push({ 
-  q: "Türkiye’nin milli içeceği hangisidir?", 
-  options: ["Kahve", "Çay", "Ayran", "Şalgam"], 
-  answer: 2 
-});
-
-// 21
-questions.push({ 
-  q: "Türkiye’nin ilk kadın pilotu kimdir?", 
-  options: ["Sabiha Gökçen", "Halide Edip", "Afet İnan", "Feriha Tevfik"], 
-  answer: 0 
-});
-
-// 22
-questions.push({ 
-  q: "Türkiye’nin en büyük gölü hangisidir?", 
-  options: ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü"], 
-  answer: 0 
-});
-
-// 23
-questions.push({ 
-  q: "Dünya’nın uydusu hangisidir?", 
-  options: ["Güneş", "Ay", "Mars", "Jüpiter"], 
-  answer: 1 
-});
-
-// 24
-questions.push({ 
-  q: "Atatürk’ün doğum yeri neresidir?", 
-  options: ["İstanbul", "Selanik", "Sofya", "Ankara"], 
-  answer: 1 
-});
-
-// 25
-questions.push({ 
-  q: "İstanbul hangi yılda fethedilmiştir?", 
-  options: ["1453", "1071", "1299", "1923"], 
-  answer: 0 
-});
-
-// 26
-questions.push({ 
-  q: "Türkiye’nin en uzun sınır komşusu hangi ülkedir?", 
-  options: ["Suriye", "Yunanistan", "Ermenistan", "İran"], 
-  answer: 0 
-});
-
-// 27
-questions.push({ 
-  q: "Kuran-ı Kerim kaç sureden oluşur?", 
-  options: ["100", "114", "120", "99"], 
-  answer: 1 
-});
-
-// 28
-questions.push({ 
-  q: "Türkiye’nin resmi dini nedir?", 
-  options: ["Hristiyanlık", "İslam", "Musevilik", "Yoktur"], 
-  answer: 1 
-});
-
-// 29
-questions.push({ 
-  q: "En büyük kemik hangi kemiktir?", 
-  options: ["Kol kemiği", "Kaval kemiği", "Uyluk kemiği", "Kaburga"], 
-  answer: 2 
-});
-
-// 30
-questions.push({ 
-  q: "TBMM hangi yıl açılmıştır?", 
-  options: ["1920", "1923", "1919", "1938"], 
-  answer: 0 
-});
-
-// 31
-questions.push({ 
-  q: "Türkiye’nin en küçük yüzölçümüne sahip ili hangisidir?", 
-  options: ["Yalova", "Bartın", "Kilis", "Düzce"], 
-  answer: 0 
-});
-
-// 32
-questions.push({ 
-  q: "Osmanlı Devleti’nin başkenti aşağıdakilerden hangisi olmamıştır?", 
-  options: ["Bursa", "İstanbul", "Edirne", "Ankara"], 
-  answer: 3 
-});
-
-// 33
-questions.push({ 
-  q: "Bir saatte kaç dakika vardır?", 
-  options: ["60", "100", "120", "90"], 
-  answer: 0 
-});
-
-// 34
-questions.push({ 
-  q: "İnsan kalbinin kaç odacığı vardır?", 
-  options: ["2", "3", "4", "5"], 
-  answer: 2 
-});
-
-// 35
-questions.push({ 
-  q: "Türkiye’nin en büyük adası hangisidir?", 
-  options: ["Bozcaada", "Marmara Adası", "Gökçeada", "Büyükada"], 
-  answer: 2 
-});
-
-// 36
-questions.push({ 
-  q: "Hangi gezegen halkalarıyla ünlüdür?", 
-  options: ["Mars", "Satürn", "Venüs", "Neptün"], 
-  answer: 1 
-});
-
-// 37
-questions.push({ 
-  q: "Türk Dil Kurumu hangi yıl kurulmuştur?", 
-  options: ["1932", "1928", "1934", "1936"], 
-  answer: 0 
-});
-
-// 38
-questions.push({ 
-  q: "Bir haftada kaç gün vardır?", 
-  options: ["5", "6", "7", "8"], 
-  answer: 2 
-});
-
-// 39
-questions.push({ 
-  q: "En küçük asal sayı nedir?", 
-  options: ["0", "1", "2", "3"], 
-  answer: 2 
-});
-
-// 40
-questions.push({ 
-  q: "Türkiye’nin ilk cumhurbaşkanı kimdir?", 
-  options: ["İsmet İnönü", "Celal Bayar", "Mustafa Kemal Atatürk", "Adnan Menderes"], 
-  answer: 2 
-});
-
-// 41
-questions.push({ 
-  q: "Türkiye’de kaç coğrafi bölge vardır?", 
-  options: ["5", "6", "7", "8"], 
-  answer: 2 
-});
-
-// 42
-questions.push({ 
-  q: "Anayasaya göre Türkiye’nin resmi dili hangisidir?", 
-  options: ["Türkçe", "Kürtçe", "İngilizce", "Arapça"], 
-  answer: 0 
-});
-
-// 43
-questions.push({ 
-  q: "Mona Lisa tablosunu kim yapmıştır?", 
-  options: ["Picasso", "Leonardo da Vinci", "Van Gogh", "Michelangelo"], 
-  answer: 1 
-});
-
-// 44
-questions.push({ 
-  q: "DNA’nın çift sarmal yapısını kim keşfetmiştir?", 
-  options: ["Watson ve Crick", "Newton", "Einstein", "Darwin"], 
-  answer: 0 
-});
-
-// 45
-questions.push({ 
-  q: "Türkiye’de cumhurbaşkanlığı sistemi hangi yıl başlamıştır?", 
-  options: ["2014", "2017", "2018", "2019"], 
-  answer: 2 
-});
-
-// 46
-questions.push({ 
-  q: "Hangi şehir ‘Ege’nin incisi’ olarak bilinir?", 
-  options: ["Muğla", "İzmir", "Aydın", "Denizli"], 
-  answer: 1 
-});
-
-// 47
-questions.push({ 
-  q: "Türkiye’nin en çok yağış alan bölgesi hangisidir?", 
-  options: ["Marmara", "Ege", "Karadeniz", "Akdeniz"], 
-  answer: 2 
-});
-
-// 48
-questions.push({ 
-  q: "Türk lirasından 6 sıfır hangi yıl atılmıştır?", 
-  options: ["2003", "2004", "2005", "2006"], 
-  answer: 2 
-});
-
-// 49
-questions.push({ 
-  q: "Türk edebiyatında ilk roman örneği hangi eserdir?", 
-  options: ["Taaşşuk-ı Talat ve Fitnat", "Araba Sevdası", "İntibah", "Felatun Bey ile Rakım Efendi"], 
-  answer: 0 
-});
-
-// 50
-questions.push({ 
-  q: "Türkiye’nin en batıdaki ili hangisidir?", 
-  options: ["Edirne", "Çanakkale", "Kırklareli", "Muğla"], 
-  answer: 0 
-});
-// 51
-questions.push({ 
-  q: "Hangi şehir ‘Yeşil Bursa’ olarak bilinir?", 
-  options: ["Bursa", "Konya", "Ankara", "İzmir"], 
-  answer: 0 
-});
-
-// 52
-questions.push({ 
-  q: "Türk alfabesinde kaç harf vardır?", 
-  options: ["29", "28", "30", "32"], 
-  answer: 0 
-});
-
-// 53
-questions.push({ 
-  q: "Türkiye’nin en doğusundaki ili hangisidir?", 
-  options: ["Kars", "Ağrı", "Iğdır", "Hakkari"], 
-  answer: 2 
-});
-
-// 54
-questions.push({ 
-  q: "Dünyanın en büyük çölü hangisidir?", 
-  options: ["Sahra", "Gobi", "Karakum", "Arabistan"], 
-  answer: 0 
-});
-
-// 55
-questions.push({ 
-  q: "Bir gün kaç saattir?", 
-  options: ["12", "24", "48", "36"], 
-  answer: 1 
-});
-
-// 56
-questions.push({ 
-  q: "Hangi gezegen Dünya’ya en yakındır?", 
-  options: ["Venüs", "Mars", "Merkür", "Jüpiter"], 
-  answer: 2 
-});
-
-// 57
-questions.push({ 
-  q: "Türkiye’nin en büyük barajı hangisidir?", 
-  options: ["Atatürk Barajı", "Keban Barajı", "Ilısu Barajı", "Deriner Barajı"], 
-  answer: 0 
-});
-
-// 58
-questions.push({ 
-  q: "Türkiye’nin ilk kadın milletvekilleri hangi yıl meclise girmiştir?", 
-  options: ["1923", "1934", "1930", "1935"], 
-  answer: 3 
-});
-
-// 59
-questions.push({ 
-  q: "Dünyanın en hızlı kara hayvanı hangisidir?", 
-  options: ["Aslan", "Çita", "Kaplan", "Leopar"], 
-  answer: 1 
-});
-
-// 60
-questions.push({ 
-  q: "Türk lirasının simgesi hangi yılda kullanılmaya başlanmıştır?", 
-  options: ["2010", "2011", "2012", "2013"], 
-  answer: 2 
-});
-
-// 61
-questions.push({ 
-  q: "Türkiye’nin en kuzeydeki ili hangisidir?", 
-  options: ["Artvin", "Sinop", "Kastamonu", "Samsun"], 
-  answer: 1 
-});
-
-// 62
-questions.push({ 
-  q: "Nobel ödülü kazanan ilk Türk bilim insanı kimdir?", 
-  options: ["Aziz Sancar", "Orhan Pamuk", "Cahit Arf", "Fazıl Hüsnü"], 
-  answer: 0 
-});
-
-// 63
-questions.push({ 
-  q: "Dünyanın en uzun nehri hangisidir?", 
-  options: ["Amazon", "Nil", "Mississippi", "Ganj"], 
-  answer: 1 
-});
-
-// 64
-questions.push({ 
-  q: "Türk Hava Yolları hangi yıl kurulmuştur?", 
-  options: ["1931", "1932", "1933", "1934"], 
-  answer: 2 
-});
-
-// 65
-questions.push({ 
-  q: "Türkiye’nin en sıcak bölgesi hangisidir?", 
-  options: ["Akdeniz", "Ege", "Güneydoğu Anadolu", "Marmara"], 
-  answer: 2 
-});
-
-// 66
-questions.push({ 
-  q: "Hangi şehir ‘Doğu’nun Paris’i’ olarak bilinir?", 
-  options: ["Van", "Kars", "Diyarbakır", "Erzurum"], 
-  answer: 3 
-});
-
-// 67
-questions.push({ 
-  q: "Türkiye’nin en eski üniversitesi hangisidir?", 
-  options: ["İstanbul Üniversitesi", "Ankara Üniversitesi", "ODTÜ", "Ege Üniversitesi"], 
-  answer: 0 
-});
-
-// 68
-questions.push({ 
-  q: "İnsan kanı hangi renktir?", 
-  options: ["Mavi", "Yeşil", "Kırmızı", "Siyah"], 
-  answer: 2 
-});
-
-// 69
-questions.push({ 
-  q: "İstanbul Boğazı hangi iki denizi birbirine bağlar?", 
-  options: ["Karadeniz - Akdeniz", "Ege - Karadeniz", "Karadeniz - Marmara", "Marmara - Ege"], 
-  answer: 2 
-});
-
-// 70
-questions.push({ 
-  q: "Türkiye’nin en büyük hayvanat bahçesi hangi ildedir?", 
-  options: ["Ankara", "Bursa", "İstanbul", "Gaziantep"], 
-  answer: 3 
-});
-
-// 71
-questions.push({ 
-  q: "Hangi şehir ‘Şehzadeler Şehri’ olarak bilinir?", 
-  options: ["Manisa", "Amasya", "Tokat", "Trabzon"], 
-  answer: 0 
-});
-
-// 72
-questions.push({ 
-  q: "Hangi ilimiz fındık üretimiyle ünlüdür?", 
-  options: ["Trabzon", "Giresun", "Ordu", "Sakarya"], 
-  answer: 2 
-});
-
-// 73
-questions.push({ 
-  q: "Türkiye’nin ilk yerli otomobil markası nedir?", 
-  options: ["Anadol", "TOGG", "Devrim", "Toros"], 
-  answer: 2 
-});
-
-// 74
-questions.push({ 
-  q: "Dünya Sağlık Örgütü’nün kısaltması nedir?", 
-  options: ["DSÖ", "WHO", "UNICEF", "NATO"], 
-  answer: 1 
-});
-
-// 75
-questions.push({ 
-  q: "Türkiye’nin en büyük yüzölçümüne sahip bölgesi hangisidir?", 
-  options: ["Marmara", "İç Anadolu", "Doğu Anadolu", "Karadeniz"], 
-  answer: 2 
-});
-
-// 76
-questions.push({ 
-  q: "Ege Denizi’nde kaç ada Türkiye’ye aittir?", 
-  options: ["2", "3", "4", "5"], 
-  answer: 2 
-});
-
-// 77
-questions.push({ 
-  q: "İnsan vücudunda kaç çift kaburga vardır?", 
-  options: ["10", "11", "12", "13"], 
-  answer: 2 
-});
-
-// 78
-questions.push({ 
-  q: "Türkiye’nin en kalabalık ikinci şehri hangisidir?", 
-  options: ["İzmir", "Bursa", "Ankara", "Konya"], 
-  answer: 2 
-});
-
-// 79
-questions.push({ 
-  q: "Osmanlı Devleti’nin ilk padişahı kimdir?", 
-  options: ["Orhan Gazi", "Osman Gazi", "Yıldırım Beyazıt", "Fatih Sultan Mehmet"], 
-  answer: 1 
-});
-
-// 80
-questions.push({ 
-  q: "Dünyada internetin en çok kullanıldığı ülke hangisidir?", 
-  options: ["Çin", "ABD", "Hindistan", "Rusya"], 
-  answer: 0 
-});
-
-// 81
-questions.push({ 
-  q: "İnsan vücudunda hangi organ insülin üretir?", 
-  options: ["Böbrek", "Karaciğer", "Pankreas", "Dalak"], 
-  answer: 2 
-});
-
-// 82
-questions.push({ 
-  q: "Türkiye’nin ilk kadın başbakanı kimdir?", 
-  options: ["Tansu Çiller", "Meral Akşener", "Sabiha Sertel", "Halide Edip"], 
-  answer: 0 
-});
-
-// 83
-questions.push({ 
-  q: "Türkiye’nin en çok turist çeken ili hangisidir?", 
-  options: ["Antalya", "İstanbul", "Muğla", "İzmir"], 
-  answer: 0 
-});
-
-// 84
-questions.push({ 
-  q: "Türkiye’nin en yüksek şelalesi hangisidir?", 
-  options: ["Tortum", "Manavgat", "Yerköprü", "Kapuzbaşı"], 
-  answer: 3 
-});
-
-// 85
-questions.push({ 
-  q: "Avrupa Birliği’ne aday ülke olan Türkiye hangi yıl başvuru yapmıştır?", 
-  options: ["1981", "1987", "1995", "2001"], 
-  answer: 1 
-});
-
-// 86
-questions.push({ 
-  q: "Türkiye’de en çok petrol hangi bölgede çıkarılır?", 
-  options: ["Doğu Anadolu", "Ege", "Güneydoğu Anadolu", "Akdeniz"], 
-  answer: 2 
-});
-
-// 87
-questions.push({ 
-  q: "Türkiye’nin en büyük doğal gölü hangisidir?", 
-  options: ["Beyşehir", "Eğirdir", "Van", "Tuz"], 
-  answer: 2 
-});
-
-// 88
-questions.push({ 
-  q: "Türk edebiyatında ‘Sefiller’ romanını kim yazmıştır?", 
-  options: ["Victor Hugo", "Balzac", "Tolstoy", "Dostoyevski"], 
-  answer: 0 
-});
-
-// 89
-questions.push({ 
-  q: "Türkiye’nin en kalabalık ilçesi hangisidir?", 
-  options: ["Çankaya", "Bağcılar", "Keçiören", "Esenyurt"], 
-  answer: 3 
-});
-
-// 90
-questions.push({ 
-  q: "Dünya’nın en büyük kıtası hangisidir?", 
-  options: ["Avrupa", "Asya", "Afrika", "Amerika"], 
-  answer: 1 
-});
-
-// 91
-questions.push({ 
-  q: "Türkiye’de en fazla şehit verilen savaş hangisidir?", 
-  options: ["Sakarya", "Çanakkale", "Büyük Taarruz", "Kurtuluş Savaşı"], 
-  answer: 1 
-});
-
-// 92
-questions.push({ 
-  q: "İstanbul’un Avrupa ve Asya’yı bağlayan köprüsü hangisidir?", 
-  options: ["Fatih Sultan Mehmet", "15 Temmuz", "Yavuz Sultan Selim", "Boğaziçi"], 
-  answer: 3 
-});
-
-// 93
-questions.push({ 
-  q: "Türkiye’nin en büyük camisi hangisidir?", 
-  options: ["Süleymaniye", "Çamlıca", "Selimiye", "Ayasofya"], 
-  answer: 1 
-});
-
-// 94
-questions.push({ 
-  q: "Türkiye’nin ilk yerli uydusunun adı nedir?", 
-  options: ["Göktürk", "İmece", "Türksat 1A", "Rasat"], 
-  answer: 2 
-});
-
-// 95
-questions.push({ 
-  q: "Türkiye’nin en fazla göç alan ili hangisidir?", 
-  options: ["İzmir", "Bursa", "Ankara", "İstanbul"], 
-  answer: 3 
-});
-
-// 96
-questions.push({ 
-  q: "En büyük okyanus hangisidir?", 
-  options: ["Hint", "Atlas", "Pasifik", "Kuzey Buz Denizi"], 
-  answer: 2 
-});
-
-// 97
-questions.push({ 
-  q: "Türkiye’nin ilk kadın tiyatro oyuncusu kimdir?", 
-  options: ["Afife Jale", "Bedia Muvahhit", "Yıldız Kenter", "Samiha Ayverdi"], 
-  answer: 0 
-});
-
-// 98
-questions.push({ 
-  q: "Dünyanın en uzun sınırına sahip iki ülke hangisidir?", 
-  options: ["ABD-Kanada", "Rusya-Kazakistan", "Çin-Rusya", "Hindistan-Pakistan"], 
-  answer: 0 
-});
-
-// 99
-questions.push({ 
-  q: "Türkiye’nin en çok göle sahip bölgesi hangisidir?", 
-  options: ["Marmara", "İç Anadolu", "Akdeniz", "Doğu Anadolu"], 
-  answer: 2 
-});
-
-// 100
-questions.push({ 
-  q: "Türkiye’nin ilk kadın doktoru kimdir?", 
-  options: ["Safiye Ali", "Halide Edip", "Afet İnan", "Feriha Baymur"], 
-  answer: 0 
-});
-// 101
-questions.push({ 
-  q: "Dünya’nın en yüksek dağı hangisidir?", 
-  options: ["Ağrı Dağı", "Everest", "K2", "Himalaya"], 
-  answer: 1 
-});
-
-// 102
-questions.push({ 
-  q: "Türkiye’nin en çok yağış alan ili hangisidir?", 
-  options: ["Artvin", "Rize", "Trabzon", "Ordu"], 
-  answer: 1 
-});
-
-// 103
-questions.push({ 
-  q: "Türkiye’nin ilk başbakanı kimdir?", 
-  options: ["İsmet İnönü", "Celal Bayar", "Refik Saydam", "Mustafa Kemal Atatürk"], 
-  answer: 0 
-});
-
-// 104
-questions.push({ 
-  q: "Hangi şehir ‘Güller Diyarı’ olarak bilinir?", 
-  options: ["Isparta", "Burdur", "Denizli", "Antalya"], 
-  answer: 0 
-});
-
-// 105
-questions.push({ 
-  q: "Türkiye’nin en fazla ada ve adacığa sahip ili hangisidir?", 
-  options: ["İzmir", "Balıkesir", "Muğla", "Çanakkale"], 
-  answer: 1 
-});
-
-// 106
-questions.push({ 
-  q: "Türkiye’nin en uzun tüneli hangisidir?", 
-  options: ["Ovit Tüneli", "Bolaman Tüneli", "Eurasia Tüneli", "Zigana Tüneli"], 
-  answer: 0 
-});
-
-// 107
-questions.push({ 
-  q: "Bir gün Dünya kendi etrafında dönüşünü yaklaşık kaç saatte tamamlar?", 
-  options: ["12", "24", "36", "48"], 
-  answer: 1 
-});
-
-// 108
-questions.push({ 
-  q: "Türkiye’de ilk televizyon yayını hangi şehirde yapılmıştır?", 
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"], 
-  answer: 1 
-});
-
-// 109
-questions.push({ 
-  q: "Dünyanın en derin gölü hangisidir?", 
-  options: ["Van Gölü", "Baykal Gölü", "Tanganika Gölü", "Hazar Gölü"], 
-  answer: 1 
-});
-
-// 110
-questions.push({ 
-  q: "Türkiye’de milli park sayısı yaklaşık kaçtır?", 
-  options: ["30", "40", "45", "50+"], 
-  answer: 3 
-});
-
-// 111
-questions.push({ 
-  q: "Türk bayrağındaki yıldız kaç köşelidir?", 
-  options: ["4", "5", "6", "8"], 
-  answer: 1 
-});
-
-// 112
-questions.push({ 
-  q: "Osmanlı Devleti’nin son padişahı kimdir?", 
-  options: ["Vahdettin", "Abdülhamid II", "Abdülaziz", "Reşat"], 
-  answer: 0 
-});
-
-// 113
-questions.push({ 
-  q: "Türkiye’nin ilk anayasası hangi yılda ilan edilmiştir?", 
-  options: ["1876", "1908", "1921", "1924"], 
-  answer: 0 
-});
-
-// 114
-questions.push({ 
-  q: "İnsan vücudunda toplam kaç kemik vardır (yetişkinlerde)?", 
-  options: ["206", "210", "230", "240"], 
-  answer: 0 
-});
-
-// 115
-questions.push({ 
-  q: "Türkiye’nin en uzun köprüsü hangisidir?", 
-  options: ["Boğaziçi", "Yavuz Sultan Selim", "1915 Çanakkale", "Osmangazi"], 
-  answer: 2 
-});
-
-// 116
-questions.push({ 
-  q: "Ayasofya hangi yıl müze olmuştur?", 
-  options: ["1932", "1934", "1936", "1938"], 
-  answer: 1 
-});
-
-// 117
-questions.push({ 
-  q: "Türkiye’nin en büyük adliyesi hangi şehirdedir?", 
-  options: ["Ankara", "İstanbul", "İzmir", "Bursa"], 
-  answer: 1 
-});
-
-// 118
-questions.push({ 
-  q: "Dünyanın en kalabalık şehri hangisidir?", 
-  options: ["Tokyo", "Şangay", "Delhi", "New York"], 
-  answer: 0 
-});
-
-// 119
-questions.push({ 
-  q: "Türkiye’nin en yüksek barajı hangisidir?", 
-  options: ["Deriner", "Keban", "Atatürk", "Ilısu"], 
-  answer: 0 
-});
-
-// 120
-questions.push({ 
-  q: "Türkiye’nin üç tarafı hangi denizlerle çevrilidir?", 
-  options: ["Karadeniz, Akdeniz, Ege", "Marmara, Karadeniz, Ege", "Akdeniz, Marmara, Ege", "Karadeniz, Marmara, Akdeniz"], 
-  answer: 0 
-});
-
-// 121
-questions.push({ 
-  q: "Türkiye’nin en yüksek şelalesi hangisidir?", 
-  options: ["Tortum", "Kapuzbaşı", "Manavgat", "Girlevik"], 
-  answer: 1 
-});
-
-// 122
-questions.push({ 
-  q: "İstanbul’un fethi hangi padişah döneminde olmuştur?", 
-  options: ["Yıldırım Bayezid", "Fatih Sultan Mehmet", "Kanuni", "II. Murat"], 
-  answer: 1 
-});
-
-// 123
-questions.push({ 
-  q: "Türkiye’nin en kalabalık ilçesi hangisidir?", 
-  options: ["Esenyurt", "Çankaya", "Keçiören", "Bağcılar"], 
-  answer: 0 
-});
-
-// 124
-questions.push({ 
-  q: "Hangi şehir ‘Peygamberler Şehri’ olarak bilinir?", 
-  options: ["Urfa", "Gaziantep", "Mardin", "Hatay"], 
-  answer: 0 
-});
-
-// 125
-questions.push({ 
-  q: "Türkiye’nin en büyük stadı hangisidir?", 
-  options: ["Atatürk Olimpiyat", "Türk Telekom", "Fenerbahçe Şükrü Saracoğlu", "Vodafone Park"], 
-  answer: 0 
-});
-
-// 126
-questions.push({ 
-  q: "Türkiye’nin ilk özel televizyon kanalı hangisidir?", 
-  options: ["Kanal D", "Show TV", "Star TV", "ATV"], 
-  answer: 2 
-});
-
-// 127
-questions.push({ 
-  q: "Bir futbol maçında devre arası kaç dakikadır?", 
-  options: ["10", "15", "20", "25"], 
-  answer: 1 
-});
-
-// 128
-questions.push({ 
-  q: "Türkiye’nin en uzun kara sınırı hangi ülkeyledir?", 
-  options: ["Yunanistan", "İran", "Irak", "Suriye"], 
-  answer: 3 
-});
-
-// 129
-questions.push({ 
-  q: "Türkiye’nin en eski camisi hangisidir?", 
-  options: ["Edirne Eski Cami", "Diyarbakır Ulu Cami", "Ayasofya", "Konya Alaaddin"], 
-  answer: 1 
-});
-
-// 130
-questions.push({ 
-  q: "Türkiye’nin ilk kadın belediye başkanı kimdir?", 
-  options: ["Müfide İlhan", "Sabiha Gökçen", "Tansu Çiller", "Afife Jale"], 
-  answer: 0 
-});
-
-// 131
-questions.push({ 
-  q: "Türkiye’nin ilk yerli otomobili hangisidir?", 
-  options: ["Anadol", "TOGG", "Devrim", "Toros"], 
-  answer: 2 
-});
-
-// 132
-questions.push({ 
-  q: "Türkiye’nin en uzun mağarası hangisidir?", 
-  options: ["Karain", "İnsuyu", "Dupnisa", "Pınargözü"], 
-  answer: 3 
-});
-
-// 133
-questions.push({ 
-  q: "İnsan beyninin en dış tabakasına ne denir?", 
-  options: ["Beyincik", "Beyin zarı", "Beyin kabuğu (korteks)", "Omurilik"], 
-  answer: 2 
-});
-
-// 134
-questions.push({ 
-  q: "Hangi hayvan ‘ormanların kralı’ olarak bilinir?", 
-  options: ["Kaplan", "Aslan", "Leopar", "Jaguar"], 
-  answer: 1 
-});
-
-// 135
-questions.push({ 
-  q: "Türkiye’de ilk metro hattı hangi şehirde açılmıştır?", 
-  options: ["Ankara", "İstanbul", "İzmir", "Bursa"], 
-  answer: 1 
-});
-
-// 136
-questions.push({ 
-  q: "Hangi şehir ‘Antep Fıstığı’ ile ünlüdür?", 
-  options: ["Şanlıurfa", "Gaziantep", "Mardin", "Adıyaman"], 
-  answer: 1 
-});
-
-// 137
-questions.push({ 
-  q: "Türkiye’nin en yüksek yaylası hangisidir?", 
-  options: ["Ayder", "Sultan Murat", "Obruk", "Erciyes"], 
-  answer: 0 
-});
-
-// 138
-questions.push({ 
-  q: "Türkiye’nin ilk kadın öğretmeni kimdir?", 
-  options: ["Refet Angın", "Safiye Ali", "Afife Jale", "Müfide İlhan"], 
-  answer: 0 
-});
-
-// 139
-questions.push({ 
-  q: "Türkiye’nin ilk milli parkı hangisidir?", 
-  options: ["Yozgat Çamlığı", "Köprülü Kanyon", "Uludağ", "Soğuksu"], 
-  answer: 0 
-});
-
-// 140
-questions.push({ 
-  q: "İnsan gözü kaç farklı rengi ayırt edebilir?", 
-  options: ["1 milyon", "5 milyon", "10 milyon", "20 milyon"], 
-  answer: 2 
-});
-
-// 141
-questions.push({ 
-  q: "Türkiye’nin en büyük tren garı hangi şehirdedir?", 
-  options: ["İstanbul", "Ankara", "Eskişehir", "İzmir"], 
-  answer: 1 
-});
-
-// 142
-questions.push({ 
-  q: "Türkiye’nin en büyük havaalanı hangisidir?", 
-  options: ["Sabiha Gökçen", "İstanbul Havalimanı", "Esenboğa", "Adnan Menderes"], 
-  answer: 1 
-});
-
-// 143
-questions.push({ 
-  q: "Türkiye’nin en çok kömür çıkarılan bölgesi hangisidir?", 
-  options: ["Zonguldak", "Afşin", "Kütahya", "Manisa"], 
-  answer: 0 
-});
-
-// 144
-questions.push({ 
-  q: "Türkiye’nin en büyük organize sanayi bölgesi hangi ildedir?", 
-  options: ["Ankara", "Bursa", "Gaziantep", "Kayseri"], 
-  answer: 2 
-});
-
-// 145
-questions.push({ 
-  q: "Bir basketbol takımında sahada kaç oyuncu bulunur?", 
-  options: ["4", "5", "6", "7"], 
-  answer: 1 
-});
-
-// 146
-questions.push({ 
-  q: "Türkiye’nin ilk milli marşı hangisidir?", 
-  options: ["İstiklal Marşı", "Genç Osman", "Onuncu Yıl Marşı", "Plevne Marşı"], 
-  answer: 0 
-});
-
-// 147
-questions.push({ 
-  q: "Türkiye’nin ilk üniversitesi hangisidir?", 
-  options: ["İstanbul Üniversitesi", "Ankara Üniversitesi", "ODTÜ", "İzmir Yüksek Teknoloji"], 
-  answer: 0 
-});
-
-// 148
-questions.push({ 
-  q: "Türkiye’nin ilk kadın avukatı kimdir?", 
-  options: ["Süreyya Ağaoğlu", "Müfide İlhan", "Sabiha Gökçen", "Tansu Çiller"], 
-  answer: 0 
-});
-
-// 149
-questions.push({ 
-  q: "Türkiye’nin en büyük adası hangisidir?", 
-  options: ["Gökçeada", "Bozcaada", "Marmara Adası", "Büyükada"], 
-  answer: 0 
-});
-
-// 150
-questions.push({ 
-  q: "Türkiye’nin en büyük milli parkı hangisidir?", 
-  options: ["Munzur Vadisi", "Kaçkar Dağları", "Ağrı Dağı", "Van Gölü"], 
-  answer: 0 
-});
-// 151
-questions.push({
-  q: "Dünya’nın en büyük okyanusu hangisidir?",
-  options: ["Atlas", "Hint", "Büyük Okyanus", "Arktik"],
-  answer: 2
-});
-
-// 152
-questions.push({
-  q: "Türkiye’nin en yüksek dağı hangisidir?",
-  options: ["Erciyes", "Ağrı", "Kaçkar", "Cilo"],
-  answer: 1
-});
-
-// 153
-questions.push({
-  q: "Dünyanın en hızlı koşan hayvanı hangisidir?",
-  options: ["Aslan", "Çita", "Leopar", "Tazı"],
-  answer: 1
-});
-
-// 154
-questions.push({
-  q: "Türkiye’de ilk kez üniversite eğitimi hangi şehirde başlamıştır?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 155
-questions.push({
-  q: "Dünya’nın uydusu hangisidir?",
-  options: ["Ay", "Güneş", "Mars", "Venüs"],
-  answer: 0
-});
-
-// 156
-questions.push({
-  q: "Türkiye’nin en büyük gölü hangisidir?",
-  options: ["Tuz Gölü", "Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
-  answer: 1
-});
-
-// 157
-questions.push({
-  q: "Osmanlı Devleti hangi yıl kurulmuştur?",
-  options: ["1299", "1453", "1071", "1517"],
-  answer: 0
-});
-
-// 158
-questions.push({
-  q: "İnsan vücudunda en güçlü kas hangisidir?",
-  options: ["Bacak", "Dil", "Kol", "Kalp"],
-  answer: 1
-});
-
-// 159
-questions.push({
-  q: "Türkiye’nin yüzölçümü bakımından en küçük ili hangisidir?",
-  options: ["Bartın", "Yalova", "Bilecik", "Düzce"],
-  answer: 1
-});
-
-// 160
-questions.push({
-  q: "En çok ülke ile sınırı olan ülke hangisidir?",
-  options: ["Rusya", "Çin", "Almanya", "Türkiye"],
-  answer: 1
-});
-
-// 161
-questions.push({
-  q: "Türkiye’nin en uzun nehri hangisidir?",
-  options: ["Kızılırmak", "Yeşilırmak", "Sakarya", "Meriç"],
-  answer: 0
-});
-
-// 162
-questions.push({
-  q: "Dünya’da kaç kıta vardır?",
-  options: ["5", "6", "7", "8"],
-  answer: 2
-});
-
-// 163
-questions.push({
-  q: "Atatürk’ün doğum yılı hangisidir?",
-  options: ["1881", "1893", "1876", "1901"],
-  answer: 0
-});
-
-// 164
-questions.push({
-  q: "Türkiye’nin başkenti neresidir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 1
-});
-
-// 165
-questions.push({
-  q: "İnsanların solunumda kullandığı gaz hangisidir?",
-  options: ["Oksijen", "Karbon", "Azot", "Hidrojen"],
-  answer: 0
-});
-
-// 166
-questions.push({
-  q: "Türkiye’nin ilk kadın pilotu kimdir?",
-  options: ["Sabiha Gökçen", "Afife Jale", "Müfide İlhan", "Halide Edip"],
-  answer: 0
-});
-
-// 167
-questions.push({
-  q: "Bir yıl kaç gündür (artık yıl hariç)?",
-  options: ["360", "364", "365", "366"],
-  answer: 2
-});
-
-// 168
-questions.push({
-  q: "Türkiye’de kaç coğrafi bölge vardır?",
-  options: ["5", "6", "7", "8"],
-  answer: 2
-});
-
-// 169
-questions.push({
-  q: "İlk Türk kadın tiyatro sanatçısı kimdir?",
-  options: ["Afife Jale", "Safiye Ali", "Müfide İlhan", "Hale Soygazi"],
-  answer: 0
-});
-
-// 170
-questions.push({
-  q: "Türkiye’nin en kalabalık şehri hangisidir?",
-  options: ["İzmir", "Ankara", "İstanbul", "Bursa"],
-  answer: 2
-});
-
-// 171
-questions.push({
-  q: "İngilizce’de ‘merhaba’ ne demektir?",
-  options: ["Hi", "Bye", "Good", "Yes"],
-  answer: 0
-});
-
-// 172
-questions.push({
-  q: "Dünya’nın en uzun nehri hangisidir?",
-  options: ["Nil", "Amazon", "Mississippi", "Ganj"],
-  answer: 0
-});
-
-// 173
-questions.push({
-  q: "Türkiye’nin en büyük adası hangisidir?",
-  options: ["Bozcaada", "Gökçeada", "Büyükada", "Marmara"],
-  answer: 1
-});
-
-// 174
-questions.push({
-  q: "Bir futbol maçında sahada kaç oyuncu bulunur (bir takımda)?",
-  options: ["9", "10", "11", "12"],
-  answer: 2
-});
-
-// 175
-questions.push({
-  q: "Türkiye’nin ilk cumhurbaşkanı kimdir?",
-  options: ["İsmet İnönü", "Mustafa Kemal Atatürk", "Celal Bayar", "Adnan Menderes"],
-  answer: 1
-});
-
-// 176
-questions.push({
-  q: "İnsan kalbi günde ortalama kaç kez atar?",
-  options: ["10.000", "50.000", "100.000", "200.000"],
-  answer: 2
-});
-
-// 177
-questions.push({
-  q: "Dünyanın en küçük ülkesi hangisidir?",
-  options: ["Monako", "Vatikan", "San Marino", "Andorra"],
-  answer: 1
-});
-
-// 178
-questions.push({
-  q: "Türkiye’de ilk nüfus sayımı hangi yılda yapılmıştır?",
-  options: ["1927", "1935", "1940", "1950"],
-  answer: 0
-});
-
-// 179
-questions.push({
-  q: "Dünya’nın en büyük çölü hangisidir?",
-  options: ["Sahra", "Gobi", "Kalahari", "Atacama"],
-  answer: 0
-});
-
-// 180
-questions.push({
-  q: "Türkiye’nin en uzun köprüsü hangisidir?",
-  options: ["Boğaziçi", "Yavuz Sultan Selim", "1915 Çanakkale", "Osmangazi"],
-  answer: 2
-});
-
-// 181
-questions.push({
-  q: "Türkiye’nin ilk milli parkı hangisidir?",
-  options: ["Yozgat Çamlığı", "Uludağ", "Köprülü Kanyon", "Soğuksu"],
-  answer: 0
-});
-
-// 182
-questions.push({
-  q: "Dünyada ilk yazıyı hangi uygarlık bulmuştur?",
-  options: ["Sümerler", "Mısırlılar", "Hititler", "Yunanlılar"],
-  answer: 0
-});
-
-// 183
-questions.push({
-  q: "Türkiye’nin en fazla göle sahip bölgesi hangisidir?",
-  options: ["Marmara", "Ege", "Akdeniz", "İç Anadolu"],
-  answer: 2
-});
-
-// 184
-questions.push({
-  q: "Hangi gezegen ‘Kızıl Gezegen’ olarak bilinir?",
-  options: ["Venüs", "Mars", "Jüpiter", "Satürn"],
-  answer: 1
-});
-
-// 185
-questions.push({
-  q: "Türkiye’nin en fazla yağış alan ili hangisidir?",
-  options: ["Trabzon", "Rize", "Artvin", "Ordu"],
-  answer: 1
-});
-
-// 186
-questions.push({
-  q: "Dünya’nın en büyük adası hangisidir?",
-  options: ["Avustralya", "Grönland", "Borneo", "Madagaskar"],
-  answer: 1
-});
-
-// 187
-questions.push({
-  q: "Türkiye’nin ilk kadın doktoru kimdir?",
-  options: ["Safiye Ali", "Refet Angın", "Afife Jale", "Halide Edip"],
-  answer: 0
-});
-
-// 188
-questions.push({
-  q: "Türkiye’de kaç tane il vardır?",
-  options: ["79", "80", "81", "82"],
-  answer: 2
-});
-
-// 189
-questions.push({
-  q: "İnsan vücudunda en uzun kemik hangisidir?",
-  options: ["Kol", "Kaval", "Uyluk (femur)", "Kaburga"],
-  answer: 2
-});
-
-// 190
-questions.push({
-  q: "Türkiye’nin en kalabalık ikinci şehri hangisidir?",
-  options: ["Ankara", "İzmir", "Bursa", "Antalya"],
-  answer: 0
-});
-
-// 191
-questions.push({
-  q: "Dünya’da en çok konuşulan dil hangisidir?",
-  options: ["İngilizce", "Çince (Mandarin)", "İspanyolca", "Arapça"],
-  answer: 1
-});
-
-// 192
-questions.push({
-  q: "Türkiye’nin ilk kadın öğretmeni kimdir?",
-  options: ["Refet Angın", "Safiye Ali", "Müfide İlhan", "Afife Jale"],
-  answer: 0
-});
-
-// 193
-questions.push({
-  q: "Dünya’nın en kalabalık kıtası hangisidir?",
-  options: ["Avrupa", "Asya", "Afrika", "Amerika"],
-  answer: 1
-});
-
-// 194
-questions.push({
-  q: "Türkiye’nin en batıdaki ili hangisidir?",
-  options: ["Edirne", "Muğla", "Çanakkale", "İzmir"],
-  answer: 0
-});
-
-// 195
-questions.push({
-  q: "Türkiye’nin en eski üniversitesi hangisidir?",
-  options: ["İstanbul Üniversitesi", "Ankara Üniversitesi", "ODTÜ", "İzmir Yüksek Teknoloji"],
-  answer: 0
-});
-
-// 196
-questions.push({
-  q: "Türkiye’nin ilk kadın milletvekilleri hangi yıl seçilmiştir?",
-  options: ["1923", "1930", "1934", "1936"],
-  answer: 2
-});
-
-// 197
-questions.push({
-  q: "Türkiye’nin en büyük hayvanat bahçesi hangi şehirde bulunur?",
-  options: ["İstanbul", "Bursa", "Gaziantep", "Ankara"],
-  answer: 2
-});
-
-// 198
-questions.push({
-  q: "Türkiye’nin en büyük gökdeleni hangi şehirdedir?",
-  options: ["Ankara", "İstanbul", "İzmir", "Bursa"],
-  answer: 1
-});
-
-// 199
-questions.push({
-  q: "Bir asır kaç yıldır?",
-  options: ["10", "50", "100", "200"],
-  answer: 2
-});
-
-// 200
-questions.push({
-  q: "Türkiye’nin en yüksek şelalesi hangisidir?",
-  options: ["Manavgat", "Kapuzbaşı", "Tortum", "Girlevik"],
-  answer: 1
-});
-// 201
-questions.push({
-  q: "Türkiye’nin en çok turist çeken ili hangisidir?",
-  options: ["İstanbul", "Antalya", "Muğla", "İzmir"],
-  answer: 1
-});
-
-// 202
-questions.push({
-  q: "Dünya’nın en yüksek dağı hangisidir?",
-  options: ["K2", "Everest", "Ağrı", "Elbruz"],
-  answer: 1
-});
-
-// 203
-questions.push({
-  q: "Türkiye’nin en büyük adası hangisidir?",
-  options: ["Bozcaada", "Gökçeada", "Marmara Adası", "Büyükada"],
-  answer: 1
-});
-
-// 204
-questions.push({
-  q: "Dünya’nın en büyük kıtası hangisidir?",
-  options: ["Asya", "Afrika", "Amerika", "Avrupa"],
-  answer: 0
-});
-
-// 205
-questions.push({
-  q: "Türkiye’nin en fazla ormana sahip bölgesi hangisidir?",
-  options: ["Ege", "Akdeniz", "Marmara", "Karadeniz"],
-  answer: 3
-});
-
-// 206
-questions.push({
-  q: "Dünya’da ilk demokrasi hangi ülkede ortaya çıkmıştır?",
-  options: ["Roma", "Mısır", "Yunanistan", "Babil"],
-  answer: 2
-});
-
-// 207
-questions.push({
-  q: "Türkiye’nin en büyük havaalanı hangisidir?",
-  options: ["İstanbul Havalimanı", "Sabiha Gökçen", "Ankara Esenboğa", "Antalya"],
-  answer: 0
-});
-
-// 208
-questions.push({
-  q: "Dünya’nın en uzun demiryolu hattı hangi ülkededir?",
-  options: ["ABD", "Rusya", "Çin", "Kanada"],
-  answer: 1
-});
-
-// 209
-questions.push({
-  q: "Türkiye’nin en büyük adliyeleri hangi şehirde bulunur?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 210
-questions.push({
-  q: "Dünya’da en çok kullanılan para birimi hangisidir?",
-  options: ["Euro", "Dolar", "Sterlin", "Yen"],
-  answer: 1
-});
-
-// 211
-questions.push({
-  q: "Türkiye’nin en yüksek barajı hangisidir?",
-  options: ["Atatürk", "Deriner", "Keban", "Ilısu"],
-  answer: 1
-});
-
-// 212
-questions.push({
-  q: "Dünya’nın en çok konuşulan dili hangisidir?",
-  options: ["İngilizce", "Çince", "İspanyolca", "Hintçe"],
-  answer: 1
-});
-
-// 213
-questions.push({
-  q: "Türkiye’nin en kalabalık ilçesi hangisidir?",
-  options: ["Bağcılar", "Keçiören", "Çankaya", "Esenyurt"],
-  answer: 3
-});
-
-// 214
-questions.push({
-  q: "Dünya’nın en büyük gölü hangisidir?",
-  options: ["Hazar", "Tuz", "Van", "Michigan"],
-  answer: 0
-});
-
-// 215
-questions.push({
-  q: "Türkiye’nin en büyük şelalesi hangisidir?",
-  options: ["Manavgat", "Kapuzbaşı", "Tortum", "Kurşunlu"],
-  answer: 2
-});
-
-// 216
-questions.push({
-  q: "Dünya’nın en hızlı treni hangi ülkededir?",
-  options: ["Çin", "Japonya", "Fransa", "Almanya"],
-  answer: 1
-});
-
-// 217
-questions.push({
-  q: "Türkiye’nin ilk kadın başbakanı kimdir?",
-  options: ["Tansu Çiller", "Meral Akşener", "Halide Edip", "Afife Jale"],
-  answer: 0
-});
-
-// 218
-questions.push({
-  q: "Dünya’nın en büyük futbol stadyumu hangi ülkededir?",
-  options: ["İngiltere", "İspanya", "Kuzey Kore", "Brezilya"],
-  answer: 2
-});
-
-// 219
-questions.push({
-  q: "Türkiye’nin en yüksek nüfuslu bölgesi hangisidir?",
-  options: ["İç Anadolu", "Marmara", "Ege", "Akdeniz"],
-  answer: 1
-});
-
-// 220
-questions.push({
-  q: "Dünya’nın en büyük havaalanı hangi ülkededir?",
-  options: ["ABD", "Çin", "Türkiye", "Birleşik Arap Emirlikleri"],
-  answer: 2
-});
-
-// 221
-questions.push({
-  q: "Türkiye’nin en eski camisi hangisidir?",
-  options: ["Ulu Camii (Bursa)", "Habib-i Neccar (Hatay)", "Selimiye", "Ayasofya"],
-  answer: 1
-});
-
-// 222
-questions.push({
-  q: "Dünya’nın en uzun sınırına sahip iki ülke hangisidir?",
-  options: ["ABD-Kanada", "Rusya-Kazakistan", "Çin-Rusya", "Hindistan-Pakistan"],
-  answer: 0
-});
-
-// 223
-questions.push({
-  q: "Türkiye’nin en büyük organize sanayi bölgesi hangi ildedir?",
-  options: ["Bursa", "Kocaeli", "Gaziantep", "Kayseri"],
-  answer: 2
-});
-
-// 224
-questions.push({
-  q: "Dünya’nın en kalabalık şehri hangisidir?",
-  options: ["Tokyo", "Şangay", "Delhi", "İstanbul"],
-  answer: 0
-});
-
-// 225
-questions.push({
-  q: "Türkiye’nin ilk yerli otomobili hangisidir?",
-  options: ["Anadol", "TOGG", "Devrim", "Toros"],
-  answer: 2
-});
-
-// 226
-questions.push({
-  q: "Dünya’nın en büyük çölü hangisidir?",
-  options: ["Sahra", "Gobi", "Karakum", "Atacama"],
-  answer: 0
-});
-
-// 227
-questions.push({
-  q: "Türkiye’nin en uzun tüneli hangisidir?",
-  options: ["Ovit", "Zigana", "Bolu Dağı", "Ordu Nefise Akçelik"],
-  answer: 0
-});
-
-// 228
-questions.push({
-  q: "Dünya’da en çok kullanılan sosyal medya platformu hangisidir?",
-  options: ["Instagram", "Facebook", "YouTube", "TikTok"],
-  answer: 1
-});
-
-// 229
-questions.push({
-  q: "Türkiye’nin ilk milli parkı hangisidir?",
-  options: ["Uludağ", "Yozgat Çamlığı", "Köprülü Kanyon", "Kaçkar"],
-  answer: 1
-});
-
-// 230
-questions.push({
-  q: "Dünya’nın en hızlı büyüyen ekonomisi hangi ülkedir?",
-  options: ["Hindistan", "Çin", "ABD", "Brezilya"],
-  answer: 1
-});
-
-// 231
-questions.push({
-  q: "Türkiye’nin en büyük ikinci gölü hangisidir?",
-  options: ["Tuz Gölü", "Beyşehir", "Eğirdir", "Manyas"],
-  answer: 0
-});
-
-// 232
-questions.push({
-  q: "Dünya’nın en kalabalık ülkesi hangisidir?",
-  options: ["Çin", "Hindistan", "ABD", "Endonezya"],
-  answer: 0
-});
-
-// 233
-questions.push({
-  q: "Türkiye’nin ilk kadın milletvekili kimdir?",
-  options: ["Satı Kadın", "Sabiha Gökçen", "Afife Jale", "Halide Edip"],
-  answer: 0
-});
-
-// 234
-questions.push({
-  q: "Dünya’nın en uzun köprüsü hangi ülkededir?",
-  options: ["Çin", "ABD", "Japonya", "Fransa"],
-  answer: 0
-});
-
-// 235
-questions.push({
-  q: "Türkiye’nin en büyük limanı hangi ildedir?",
-  options: ["İzmir", "Mersin", "İstanbul", "Kocaeli"],
-  answer: 1
-});
-
-// 236
-questions.push({
-  q: "Dünya’nın en büyük ekonomisi hangi ülkedir?",
-  options: ["Çin", "ABD", "Japonya", "Almanya"],
-  answer: 1
-});
-
-// 237
-questions.push({
-  q: "Türkiye’nin en fazla şehit verilen savaşı hangisidir?",
-  options: ["Sakarya", "Çanakkale", "Büyük Taarruz", "Kurtuluş Savaşı"],
-  answer: 1
-});
-
-// 238
-questions.push({
-  q: "Dünya’nın en büyük adası hangisidir?",
-  options: ["Avustralya", "Grönland", "Borneo", "Madagaskar"],
-  answer: 1
-});
-
-// 239
-questions.push({
-  q: "Türkiye’nin en kalabalık üçüncü şehri hangisidir?",
-  options: ["Bursa", "İzmir", "Antalya", "Adana"],
-  answer: 1
-});
-
-// 240
-questions.push({
-  q: "Dünya’nın en büyük barajı hangi ülkededir?",
-  options: ["Çin", "ABD", "Rusya", "Hindistan"],
-  answer: 0
-});
-
-// 241
-questions.push({
-  q: "Türkiye’nin en büyük üniversitesi (öğrenci sayısı) hangisidir?",
-  options: ["Anadolu", "İstanbul", "Ankara", "Gazi"],
-  answer: 0
-});
-
-// 242
-questions.push({
-  q: "Dünya’nın en eski üniversitesi hangi ülkededir?",
-  options: ["Mısır", "İtalya", "Fas", "Türkiye"],
-  answer: 2
-});
-
-// 243
-questions.push({
-  q: "Türkiye’nin en uzun sahiline sahip ili hangisidir?",
-  options: ["Muğla", "Antalya", "Mersin", "Sinop"],
-  answer: 0
-});
-
-// 244
-questions.push({
-  q: "Dünya’nın en kalabalık ikinci ülkesi hangisidir?",
-  options: ["Çin", "ABD", "Hindistan", "Endonezya"],
-  answer: 2
-});
-
-// 245
-questions.push({
-  q: "Türkiye’nin en yüksek şelalesi hangisidir?",
-  options: ["Manavgat", "Kapuzbaşı", "Tortum", "Girlevik"],
-  answer: 1
-});
-
-// 246
-questions.push({
-  q: "Dünya’nın en hızlı internetine sahip ülkesi hangisidir?",
-  options: ["Güney Kore", "Japonya", "ABD", "Almanya"],
-  answer: 0
-});
-
-// 247
-questions.push({
-  q: "Türkiye’nin en çok göç alan ili hangisidir?",
-  options: ["İstanbul", "Ankara", "Bursa", "İzmir"],
-  answer: 0
-});
-
-// 248
-questions.push({
-  q: "Dünya’nın en yüksek şelalesi hangisidir?",
-  options: ["Niagara", "Angel", "Iguazu", "Victoria"],
-  answer: 1
-});
-
-// 249
-questions.push({
-  q: "Türkiye’nin en büyük kütüphanesi hangi şehirde bulunur?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 1
-});
-
-// 250
-questions.push({
-  q: "Dünya’nın en kalabalık dördüncü ülkesi hangisidir?",
-  options: ["Endonezya", "Pakistan", "Brezilya", "Nijerya"],
-  answer: 0
-});
-// 251
-questions.push({
-  q: "Türkiye’nin en büyük kapalı spor salonu hangi şehirdedir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 252
-questions.push({
-  q: "Dünya’nın en uzun nehirlerinden biri olan Amazon Nehri hangi kıtadadır?",
-  options: ["Afrika", "Asya", "Güney Amerika", "Avrupa"],
-  answer: 2
-});
-
-// 253
-questions.push({
-  q: "Türkiye’nin ilk yerli elektrikli otomobili hangisidir?",
-  options: ["Devrim", "TOGG", "Anadol", "Toros"],
-  answer: 1
-});
-
-// 254
-questions.push({
-  q: "Dünya’nın en büyük okyanusu hangisidir?",
-  options: ["Atlas", "Hint", "Büyük Okyanus", "Kuzey Buz Denizi"],
-  answer: 2
-});
-
-// 255
-questions.push({
-  q: "Türkiye’nin en çok göl bulunan bölgesi hangisidir?",
-  options: ["Ege", "Akdeniz", "İç Anadolu", "Doğu Anadolu"],
-  answer: 1
-});
-
-// 256
-questions.push({
-  q: "Dünya’nın en hızlı hayvanı hangisidir?",
-  options: ["Çita", "Kartal", "Tavşan", "At"],
-  answer: 0
-});
-
-// 257
-questions.push({
-  q: "Türkiye’nin ilk yerli uydusu hangisidir?",
-  options: ["BİLSAT", "RASAT", "Göktürk", "Türksat 1A"],
-  answer: 1
-});
-
-// 258
-questions.push({
-  q: "Dünya’nın en çok kahve üreten ülkesi hangisidir?",
-  options: ["Brezilya", "Kolombiya", "Etiyopya", "Vietnam"],
-  answer: 0
-});
-
-// 259
-questions.push({
-  q: "Türkiye’nin en çok yağmur alan ili hangisidir?",
-  options: ["Artvin", "Rize", "Trabzon", "Giresun"],
-  answer: 1
-});
-
-// 260
-questions.push({
-  q: "Dünya’nın en büyük ticaret merkezi olan Wall Street hangi ülkededir?",
-  options: ["İngiltere", "ABD", "Almanya", "Japonya"],
-  answer: 1
-});
-
-// 261
-questions.push({
-  q: "Türkiye’nin en büyük doğal gölü hangisidir?",
-  options: ["Tuz Gölü", "Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
-  answer: 1
-});
-
-// 262
-questions.push({
-  q: "Dünya’da en çok ada hangi ülkededir?",
-  options: ["Endonezya", "Filipinler", "İsveç", "Norveç"],
-  answer: 2
-});
-
-// 263
-questions.push({
-  q: "Türkiye’nin en eski üniversitesi hangisidir?",
-  options: ["İstanbul", "Ankara", "Ege", "Gazi"],
-  answer: 0
-});
-
-// 264
-questions.push({
-  q: "Dünya’nın en büyük elektrik üretim barajı hangisidir?",
-  options: ["Hoover", "Ilısu", "Üç Boğaz (Çin)", "Aswan"],
-  answer: 2
-});
-
-// 265
-questions.push({
-  q: "Türkiye’nin en büyük havalimanı hangi şehirde bulunur?",
-  options: ["İstanbul", "Ankara", "İzmir", "Antalya"],
-  answer: 0
-});
-
-// 266
-questions.push({
-  q: "Dünya’nın en eski şehirlerinden biri hangisidir?",
-  options: ["Şam", "Atina", "Roma", "Babil"],
-  answer: 0
-});
-
-// 267
-questions.push({
-  q: "Türkiye’nin en çok şehri hangi coğrafi bölgede bulunur?",
-  options: ["Marmara", "İç Anadolu", "Karadeniz", "Ege"],
-  answer: 2
-});
-
-// 268
-questions.push({
-  q: "Dünya’nın en büyük ticari limanı hangi ülkededir?",
-  options: ["ABD", "Çin", "Hollanda", "Japonya"],
-  answer: 1
-});
-
-// 269
-questions.push({
-  q: "Türkiye’nin en çok fındık üreten ili hangisidir?",
-  options: ["Ordu", "Giresun", "Sakarya", "Trabzon"],
-  answer: 0
-});
-
-// 270
-questions.push({
-  q: "Dünya’nın en eski yazılı destanı hangisidir?",
-  options: ["İlyada", "Gılgamış", "Şehname", "Odysseia"],
-  answer: 1
-});
-
-// 271
-questions.push({
-  q: "Türkiye’nin en kalabalık ikinci ili hangisidir?",
-  options: ["İzmir", "Ankara", "Bursa", "Antalya"],
-  answer: 1
-});
-
-// 272
-questions.push({
-  q: "Dünya’nın en çok ziyaret edilen şehri hangisidir?",
-  options: ["Paris", "Londra", "Dubai", "Bangkok"],
-  answer: 3
-});
-
-// 273
-questions.push({
-  q: "Türkiye’nin en büyük adası hangisidir?",
-  options: ["Marmara Adası", "Bozcaada", "Gökçeada", "Büyükada"],
-  answer: 2
-});
-
-// 274
-questions.push({
-  q: "Dünya’nın en hızlı büyüyen şehirlerinden biri hangisidir?",
-  options: ["Dubai", "Şangay", "Mumbai", "İstanbul"],
-  answer: 1
-});
-
-// 275
-questions.push({
-  q: "Türkiye’nin en büyük yeraltı şehri hangi ildedir?",
-  options: ["Nevşehir", "Kayseri", "Niğde", "Aksaray"],
-  answer: 0
-});
-
-// 276
-questions.push({
-  q: "Dünya’nın en büyük enerji kaynağı hangisidir?",
-  options: ["Petrol", "Kömür", "Doğalgaz", "Güneş"],
-  answer: 0
-});
-
-// 277
-questions.push({
-  q: "Türkiye’nin ilk milli parkı hangisidir?",
-  options: ["Uludağ", "Köprülü Kanyon", "Yozgat Çamlığı", "Kaçkar"],
-  answer: 2
-});
-
-// 278
-questions.push({
-  q: "Dünya’nın en çok okyanus kıyısına sahip ülkesi hangisidir?",
-  options: ["Rusya", "ABD", "Kanada", "Avustralya"],
-  answer: 2
-});
-
-// 279
-questions.push({
-  q: "Türkiye’nin en uzun akarsuyu hangisidir?",
-  options: ["Kızılırmak", "Yeşilırmak", "Fırat", "Sakarya"],
-  answer: 0
-});
-
-// 280
-questions.push({
-  q: "Dünya’nın en kalabalık şehri hangisidir?",
-  options: ["Tokyo", "Şangay", "Delhi", "İstanbul"],
-  answer: 0
-});
-
-// 281
-questions.push({
-  q: "Türkiye’nin en eski tiyatrosu hangi şehirde bulunur?",
-  options: ["İzmir", "Bergama", "Antalya", "Aspendos"],
-  answer: 3
-});
-
-// 282
-questions.push({
-  q: "Dünya’nın en büyük hava yolu şirketi hangisidir?",
-  options: ["Emirates", "American Airlines", "Qatar Airways", "Lufthansa"],
-  answer: 1
-});
-
-// 283
-questions.push({
-  q: "Türkiye’nin ilk milli tankı hangisidir?",
-  options: ["Altay", "Panzer", "Leopard", "M48"],
-  answer: 0
-});
-
-// 284
-questions.push({
-  q: "Dünya’nın en kalabalık Müslüman ülkesi hangisidir?",
-  options: ["Pakistan", "Endonezya", "Türkiye", "Bangladeş"],
-  answer: 1
-});
-
-// 285
-questions.push({
-  q: "Türkiye’nin en çok üzüm üreten bölgesi hangisidir?",
-  options: ["Ege", "Marmara", "Akdeniz", "Güneydoğu Anadolu"],
-  answer: 0
-});
-
-// 286
-questions.push({
-  q: "Dünya’nın en uzun surları hangi şehirde bulunur?",
-  options: ["İstanbul", "Roma", "Pekin", "Diyarbakır"],
-  answer: 3
-});
-
-// 287
-questions.push({
-  q: "Türkiye’nin ilk kadın pilotu kimdir?",
-  options: ["Sabiha Gökçen", "Afife Jale", "Halide Edip", "Feriha Sanerk"],
-  answer: 0
-});
-
-// 288
-questions.push({
-  q: "Dünya’nın en büyük petrol rezervlerine sahip ülkesi hangisidir?",
-  options: ["Suudi Arabistan", "Venezuela", "Rusya", "İran"],
-  answer: 1
-});
-
-// 289
-questions.push({
-  q: "Türkiye’nin en uzun köprüsü hangisidir?",
-  options: ["Yavuz Sultan Selim", "1915 Çanakkale", "Osmangazi", "Boğaziçi"],
-  answer: 1
-});
-
-// 290
-questions.push({
-  q: "Dünya’nın en büyük futbol stadyumu hangisidir?",
-  options: ["Maracana", "Camp Nou", "Rungrado (Kuzey Kore)", "Wembley"],
-  answer: 2
-});
-
-// 291
-questions.push({
-  q: "Türkiye’nin en çok yeraltı kaynağı çıkarılan bölgesi hangisidir?",
-  options: ["Marmara", "Ege", "Karadeniz", "Doğu Anadolu"],
-  answer: 3
-});
-
-// 292
-questions.push({
-  q: "Dünya’nın en yüksek köprüsü hangi ülkededir?",
-  options: ["Fransa", "Çin", "ABD", "Japonya"],
-  answer: 0
-});
-
-// 293
-questions.push({
-  q: "Türkiye’nin en büyük ikinci adası hangisidir?",
-  options: ["Bozcaada", "Marmara Adası", "Büyükada", "Gökçeada"],
-  answer: 1
-});
-
-// 294
-questions.push({
-  q: "Dünya’nın en çok konuşulan ikinci dili hangisidir?",
-  options: ["İngilizce", "Çince", "İspanyolca", "Hintçe"],
-  answer: 0
-});
-
-// 295
-questions.push({
-  q: "Türkiye’nin en eski milli parkı hangisidir?",
-  options: ["Yozgat Çamlığı", "Uludağ", "Kaçkar", "Köprülü Kanyon"],
-  answer: 0
-});
-
-// 296
-questions.push({
-  q: "Dünya’nın en büyük internet kullanıcı sayısına sahip ülkesi hangisidir?",
-  options: ["Çin", "ABD", "Hindistan", "Rusya"],
-  answer: 0
-});
-
-// 297
-questions.push({
-  q: "Türkiye’nin en çok tarım yapılan bölgesi hangisidir?",
-  options: ["Ege", "Marmara", "Akdeniz", "Güneydoğu Anadolu"],
-  answer: 2
-});
-
-// 298
-questions.push({
-  q: "Dünya’nın en yüksek şehri hangisidir?",
-  options: ["Lhasa", "La Paz", "Kathmandu", "Quito"],
-  answer: 1
-});
-
-// 299
-questions.push({
-  q: "Türkiye’nin en çok öğrenciye sahip üniversitesi hangisidir?",
-  options: ["İstanbul", "Anadolu", "Ankara", "Selçuk"],
-  answer: 1
-});
-
-// 300
-questions.push({
-  q: "Dünya’nın en kalabalık başkenti hangisidir?",
-  options: ["Tokyo", "Delhi", "Pekin", "Meksiko"],
-  answer: 0
-});
-// 301
-questions.push({
-  q: "Türkiye’nin en yüksek dağı hangisidir?",
-  options: ["Ağrı Dağı", "Erciyes", "Kaçkar", "Süphan"],
-  answer: 0
-});
-
-// 302
-questions.push({
-  q: "Dünya’nın en kalabalık kıtası hangisidir?",
-  options: ["Asya", "Afrika", "Avrupa", "Güney Amerika"],
-  answer: 0
-});
-
-// 303
-questions.push({
-  q: "Türkiye’nin ilk cumhurbaşkanı kimdir?",
-  options: ["Mustafa Kemal Atatürk", "İsmet İnönü", "Celal Bayar", "Cemal Gürsel"],
-  answer: 0
-});
-
-// 304
-questions.push({
-  q: "Dünya’nın en büyük çölü hangisidir?",
-  options: ["Sahra", "Gobi", "Karakum", "Kalahari"],
-  answer: 0
-});
-
-// 305
-questions.push({
-  q: "Türkiye’nin en kalabalık şehri hangisidir?",
-  options: ["Ankara", "İstanbul", "İzmir", "Bursa"],
-  answer: 1
-});
-
-// 306
-questions.push({
-  q: "Dünya’nın en yüksek şelalesi hangisidir?",
-  options: ["Niagara", "Angel", "Iguazu", "Victoria"],
-  answer: 1
-});
-
-// 307
-questions.push({
-  q: "Türkiye’nin ilk anayasası hangi yılda kabul edilmiştir?",
-  options: ["1876", "1921", "1924", "1961"],
-  answer: 0
-});
-
-// 308
-questions.push({
-  q: "Dünya’nın en çok kullanılan para birimi hangisidir?",
-  options: ["Euro", "Dolar", "Yen", "Sterlin"],
-  answer: 1
-});
-
-// 309
-questions.push({
-  q: "Türkiye’nin en eski bankası hangisidir?",
-  options: ["Ziraat Bankası", "İş Bankası", "Osmanlı Bankası", "Halk Bankası"],
-  answer: 2
-});
-
-// 310
-questions.push({
-  q: "Dünya’nın en uzun hayvanı hangisidir?",
-  options: ["Fil", "Zürafa", "Balina", "Anakonda"],
-  answer: 1
-});
-
-// 311
-questions.push({
-  q: "Türkiye’nin ilk kadın milletvekilleri hangi yıl seçilmiştir?",
-  options: ["1923", "1930", "1934", "1946"],
-  answer: 2
-});
-
-// 312
-questions.push({
-  q: "Dünya’nın en hızlı trenleri hangi ülkededir?",
-  options: ["Fransa", "Japonya", "Çin", "Almanya"],
-  answer: 2
-});
-
-// 313
-questions.push({
-  q: "Türkiye’nin başkenti neresidir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 1
-});
-
-// 314
-questions.push({
-  q: "Dünya’nın en büyük gölü hangisidir?",
-  options: ["Hazar", "Aral", "Tuz", "Superior"],
-  answer: 0
-});
-
-// 315
-questions.push({
-  q: "Türkiye’nin ilk kadın öğretmeni kimdir?",
-  options: ["Refet Angın", "Sabiha Gökçen", "Afet İnan", "Halide Edip"],
-  answer: 0
-});
-
-// 316
-questions.push({
-  q: "Dünya’nın en kalabalık ikinci ülkesi hangisidir?",
-  options: ["ABD", "Hindistan", "Endonezya", "Brezilya"],
-  answer: 1
-});
-
-// 317
-questions.push({
-  q: "Türkiye’nin ilk özel televizyon kanalı hangisidir?",
-  options: ["Kanal D", "Show TV", "Star TV", "ATV"],
-  answer: 2
-});
-
-// 318
-questions.push({
-  q: "Dünya’nın en yüksek yanardağı hangisidir?",
-  options: ["Kilimanjaro", "Mauna Kea", "Etna", "Fuji"],
-  answer: 1
-});
-
-// 319
-questions.push({
-  q: "Türkiye’nin ilk kadın başbakanı kimdir?",
-  options: ["Tansu Çiller", "Meral Akşener", "Türkan Akyol", "Emine Erdoğan"],
-  answer: 0
-});
-
-// 320
-questions.push({
-  q: "Dünya’nın en büyük ekonomisi hangi ülkedir?",
-  options: ["ABD", "Çin", "Japonya", "Almanya"],
-  answer: 0
-});
-
-// 321
-questions.push({
-  q: "Türkiye’nin ilk romanı hangisidir?",
-  options: ["Araba Sevdası", "Taaşşuk-ı Talat ve Fitnat", "İntibah", "Kiralık Konak"],
-  answer: 1
-});
-
-// 322
-questions.push({
-  q: "Dünya’nın en yüksek noktası neresidir?",
-  options: ["Everest", "K2", "Kangchenjunga", "Annapurna"],
-  answer: 0
-});
-
-// 323
-questions.push({
-  q: "Türkiye’nin en uzun tüneli hangisidir?",
-  options: ["Ovit", "Zigana", "Eurasia", "Deliktaş"],
-  answer: 0
-});
-
-// 324
-questions.push({
-  q: "Dünya’nın en kalabalık başkentlerinden biri hangisidir?",
-  options: ["Tokyo", "Delhi", "Meksiko", "Pekin"],
-  answer: 0
-});
-
-// 325
-questions.push({
-  q: "Türkiye’nin ilk yerli savaş gemisi hangisidir?",
-  options: ["TCG Heybeliada", "TCG Büyükada", "TCG Anadolu", "TCG Kınalıada"],
-  answer: 0
-});
-
-// 326
-questions.push({
-  q: "Dünya’nın en uzun köprülerinden biri hangisidir?",
-  options: ["Danyang-Kunshan (Çin)", "Golden Gate", "Bosporus", "Millau"],
-  answer: 0
-});
-
-// 327
-questions.push({
-  q: "Türkiye’nin en çok turist çeken ili hangisidir?",
-  options: ["İstanbul", "Antalya", "Muğla", "İzmir"],
-  answer: 1
-});
-
-// 328
-questions.push({
-  q: "Dünya’nın en derin noktası neresidir?",
-  options: ["Mariana Çukuru", "Java Çukuru", "Tonga", "Puerto Rico"],
-  answer: 0
-});
-
-// 329
-questions.push({
-  q: "Türkiye’nin ilk radyosu hangi yılda yayın yapmıştır?",
-  options: ["1923", "1927", "1930", "1935"],
-  answer: 1
-});
-
-// 330
-questions.push({
-  q: "Dünya’nın en uzun sınırına sahip iki ülke hangisidir?",
-  options: ["ABD-Kanada", "Rusya-Kazakistan", "Çin-Hindistan", "Arjantin-Brezilya"],
-  answer: 0
-});
-
-// 331
-questions.push({
-  q: "Türkiye’nin ilk kadın doktoru kimdir?",
-  options: ["Safiye Ali", "Halide Edip", "Türkan Akyol", "Afet İnan"],
-  answer: 0
-});
-
-// 332
-questions.push({
-  q: "Dünya’nın en büyük nükleer santrali hangi ülkededir?",
-  options: ["ABD", "Japonya", "Rusya", "Çin"],
-  answer: 1
-});
-
-// 333
-questions.push({
-  q: "Türkiye’nin en eski camisi hangisidir?",
-  options: ["Ulu Cami (Diyarbakır)", "Ayasofya", "Süleymaniye", "Ulu Cami (Bursa)"],
-  answer: 0
-});
-
-// 334
-questions.push({
-  q: "Dünya’nın en uzun yaşayan hayvanı hangisidir?",
-  options: ["Kaplumbağa", "Balina", "Papağan", "Fil"],
-  answer: 0
-});
-
-// 335
-questions.push({
-  q: "Türkiye’nin en büyük adalet sarayı hangi şehirdedir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 336
-questions.push({
-  q: "Dünya’nın en çok satılan kitabı hangisidir?",
-  options: ["Kuran", "İncil", "Harry Potter", "Yüzüklerin Efendisi"],
-  answer: 1
-});
-
-// 337
-questions.push({
-  q: "Türkiye’nin ilk kadın bakanı kimdir?",
-  options: ["Türkan Akyol", "Tansu Çiller", "Meral Akşener", "Fatma Şahin"],
-  answer: 0
-});
-
-// 338
-questions.push({
-  q: "Dünya’nın en hızlı bilgisayarı hangi ülkededir?",
-  options: ["ABD", "Japonya", "Çin", "Almanya"],
-  answer: 2
-});
-
-// 339
-questions.push({
-  q: "Türkiye’nin ilk üniversitesi hangisidir?",
-  options: ["İstanbul Üniversitesi", "Ankara Üniversitesi", "Ege Üniversitesi", "Gazi Üniversitesi"],
-  answer: 0
-});
-
-// 340
-questions.push({
-  q: "Dünya’nın en eski yazı sistemi hangisidir?",
-  options: ["Çivi Yazısı", "Hiyeroglif", "Alfabe", "Latin"],
-  answer: 0
-});
-
-// 341
-questions.push({
-  q: "Türkiye’nin ilk kadın tiyatro oyuncusu kimdir?",
-  options: ["Afife Jale", "Bedia Muvahhit", "Yıldız Kenter", "Gülriz Sururi"],
-  answer: 0
-});
-
-// 342
-questions.push({
-  q: "Dünya’nın en büyük havaalanı hangi ülkededir?",
-  options: ["ABD", "Çin", "Türkiye", "Almanya"],
-  answer: 2
-});
-
-// 343
-questions.push({
-  q: "Türkiye’nin ilk kadın belediye başkanı kimdir?",
-  options: ["Sadiye Hanım", "Müfide İlhan", "Tansu Çiller", "Lale Aytaman"],
-  answer: 1
-});
-
-// 344
-questions.push({
-  q: "Dünya’nın en çok kullanılan sosyal medya platformu hangisidir?",
-  options: ["Facebook", "YouTube", "Instagram", "TikTok"],
-  answer: 1
-});
-
-// 345
-questions.push({
-  q: "Türkiye’nin en büyük doğal limanı hangi şehirdedir?",
-  options: ["Mersin", "İstanbul", "İzmir", "Trabzon"],
-  answer: 2
-});
-
-// 346
-questions.push({
-  q: "Dünya’nın en hızlı internetine sahip ülke hangisidir?",
-  options: ["Güney Kore", "Japonya", "ABD", "İsveç"],
-  answer: 0
-});
-
-// 347
-questions.push({
-  q: "Türkiye’nin ilk yerli bilgisayarı hangisidir?",
-  options: ["Milgen", "TÜBİTAK 700", "Ceylan", "Atak"],
-  answer: 2
-});
-
-// 348
-questions.push({
-  q: "Dünya’nın en eski üniversitesi hangisidir?",
-  options: ["Oxford", "Bologna", "Al-Karaouine", "Harvard"],
-  answer: 2
-});
-
-// 349
-questions.push({
-  q: "Türkiye’nin ilk kadın kaymakamı kimdir?",
-  options: ["Lale Aytaman", "Müfide İlhan", "Türkan Akyol", "Fatma Şahin"],
-  answer: 0
-});
-
-// 350
-questions.push({
-  q: "Dünya’nın en büyük spor organizasyonu hangisidir?",
-  options: ["Dünya Kupası", "Olimpiyat Oyunları", "Şampiyonlar Ligi", "NBA"],
-  answer: 1
-});
-// 351
-questions.push({
-  q: "Türkiye’nin en eski üniversitesi hangisidir?",
-  options: ["İstanbul Üniversitesi", "Ankara Üniversitesi", "Ege Üniversitesi", "Marmara Üniversitesi"],
-  answer: 0
-});
-
-// 352
-questions.push({
-  q: "Dünya’nın en yüksek sıcaklığı hangi ülkede ölçülmüştür?",
-  options: ["Libya", "Kuveyt", "Irak", "Mısır"],
-  answer: 0
-});
-
-// 353
-questions.push({
-  q: "Türkiye’nin ilk kadın pilotu kimdir?",
-  options: ["Sabiha Gökçen", "Türkan Akyol", "Afet İnan", "Halet Çambel"],
-  answer: 0
-});
-
-// 354
-questions.push({
-  q: "Dünya’nın en geniş okyanusu hangisidir?",
-  options: ["Atlas", "Hint", "Büyük Okyanus", "Kuzey Buz Denizi"],
-  answer: 2
-});
-
-// 355
-questions.push({
-  q: "Türkiye’nin ilk milli marşı hangisidir?",
-  options: ["İstiklal Marşı", "Osmanlı Marşı", "Mehter Marşı", "Gençlik Marşı"],
-  answer: 0
-});
-
-// 356
-questions.push({
-  q: "Dünya’nın en büyük adası hangisidir?",
-  options: ["Grönland", "Madagaskar", "Borneo", "Yeni Gine"],
-  answer: 0
-});
-
-// 357
-questions.push({
-  q: "Türkiye’nin en büyük barajı hangisidir?",
-  options: ["Atatürk Barajı", "Keban Barajı", "Ilısu Barajı", "Hirfanlı Barajı"],
-  answer: 0
-});
-
-// 358
-questions.push({
-  q: "Dünya’nın en uzun nehri hangisidir?",
-  options: ["Amazon", "Nil", "Mississippi", "Yangtze"],
-  answer: 1
-});
-
-// 359
-questions.push({
-  q: "Türkiye’nin ilk kadın profesörü kimdir?",
-  options: ["Remziye Hisar", "Halide Edip", "Türkan Akyol", "Fatma Şahin"],
-  answer: 0
-});
-
-// 360
-questions.push({
-  q: "Dünya’nın en büyük okyanus akıntısı hangisidir?",
-  options: ["Körfez Akıntısı", "Humboldt", "Kuroshio", "Benguela"],
-  answer: 0
-});
-
-// 361
-questions.push({
-  q: "Türkiye’nin ilk kadın tiyatro sanatçısı kimdir?",
-  options: ["Afife Jale", "Yıldız Kenter", "Bedia Muvahhit", "Gülriz Sururi"],
-  answer: 0
-});
-
-// 362
-questions.push({
-  q: "Dünya’nın en çok konuşulan dili hangisidir?",
-  options: ["İngilizce", "Çince", "İspanyolca", "Arapça"],
-  answer: 1
-});
-
-// 363
-questions.push({
-  q: "Türkiye’nin en büyük gölü hangisidir?",
-  options: ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
-  answer: 0
-});
-
-// 364
-questions.push({
-  q: "Dünya’nın en uzun yaşayan canlısı hangisidir?",
-  options: ["Kaplumbağa", "Grönland Balinası", "Papağan", "Fil"],
-  answer: 1
-});
-
-// 365
-questions.push({
-  q: "Türkiye’nin ilk kadın belediye başkanı kimdir?",
-  options: ["Müfide İlhan", "Sabiha Sertel", "Afife Jale", "Lale Aytaman"],
-  answer: 0
-});
-
-// 366
-questions.push({
-  q: "Dünya’nın en hızlı kara hayvanı hangisidir?",
-  options: ["Çita", "Aslan", "Antilop", "Kaplan"],
-  answer: 0
-});
-
-// 367
-questions.push({
-  q: "Türkiye’nin ilk milli parkı hangisidir?",
-  options: ["Yozgat Çamlığı", "Uludağ", "Köprülü Kanyon", "Kazdağları"],
-  answer: 0
-});
-
-// 368
-questions.push({
-  q: "Dünya’nın en çok kullanılan arama motoru hangisidir?",
-  options: ["Google", "Bing", "Yandex", "Yahoo"],
-  answer: 0
-});
-
-// 369
-questions.push({
-  q: "Türkiye’nin en kuzey noktası neresidir?",
-  options: ["Sinop İnceburun", "Artvin Hopa", "Kırklareli", "Trabzon Sürmene"],
-  answer: 0
-});
-
-// 370
-questions.push({
-  q: "Dünya’nın en büyük doğal limanı hangisidir?",
-  options: ["Sidney", "İzmir", "New York", "Mersin"],
-  answer: 0
-});
-
-// 371
-questions.push({
-  q: "Türkiye’nin en büyük adası hangisidir?",
-  options: ["Gökçeada", "Bozcaada", "Marmara Adası", "Heybeliada"],
-  answer: 0
-});
-
-// 372
-questions.push({
-  q: "Dünya’nın en çok ziyaret edilen şehri hangisidir?",
-  options: ["Paris", "Londra", "Bangkok", "İstanbul"],
-  answer: 2
-});
-
-// 373
-questions.push({
-  q: "Türkiye’nin ilk özel üniversitesi hangisidir?",
-  options: ["Bilkent", "Koç", "Sabancı", "Başkent"],
-  answer: 0
-});
-
-// 374
-questions.push({
-  q: "Dünya’nın en kalabalık şehri hangisidir?",
-  options: ["Tokyo", "Delhi", "Şanghay", "Meksiko"],
-  answer: 0
-});
-
-// 375
-questions.push({
-  q: "Türkiye’nin en uzun köprüsü hangisidir?",
-  options: ["1915 Çanakkale Köprüsü", "Yavuz Sultan Selim", "Osman Gazi", "Boğaziçi"],
-  answer: 0
-});
-
-// 376
-questions.push({
-  q: "Dünya’nın en büyük ikinci kıtası hangisidir?",
-  options: ["Asya", "Afrika", "Kuzey Amerika", "Avrupa"],
-  answer: 1
-});
-
-// 377
-questions.push({
-  q: "Türkiye’nin ilk kadın vali yardımcısı kimdir?",
-  options: ["Lale Aytaman", "Türkan Akyol", "Müfide İlhan", "Afife Jale"],
-  answer: 0
-});
-
-// 378
-questions.push({
-  q: "Dünya’nın en uzun insan yapımı duvarı hangisidir?",
-  options: ["Çin Seddi", "Berlin Duvarı", "Hadrian Duvarı", "Batı Şeria"],
-  answer: 0
-});
-
-// 379
-questions.push({
-  q: "Türkiye’nin en çok göç alan şehri hangisidir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 380
-questions.push({
-  q: "Dünya’nın en eski şehirlerinden biri hangisidir?",
-  options: ["Şam", "Atina", "İstanbul", "Roma"],
-  answer: 0
-});
-
-// 381
-questions.push({
-  q: "Türkiye’nin en büyük adliyeleri hangi şehirde bulunur?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 382
-questions.push({
-  q: "Dünya’nın en yüksek heykeli hangisidir?",
-  options: ["Özgürlük Heykeli", "Birlik Heykeli (Hindistan)", "Christ Redeemer", "Büyük Buda"],
-  answer: 1
-});
-
-// 383
-questions.push({
-  q: "Türkiye’nin ilk kadın rektörü kimdir?",
-  options: ["Filiz Dinçmen", "Türkan Akyol", "Sabiha Sertel", "Lale Aytaman"],
-  answer: 1
-});
-
-// 384
-questions.push({
-  q: "Dünya’nın en büyük futbol stadyumu hangisidir?",
-  options: ["Maracana", "Rungrado 1 Mayıs", "Camp Nou", "Wembley"],
-  answer: 1
-});
-
-// 385
-questions.push({
-  q: "Türkiye’nin en uzun nehri hangisidir?",
-  options: ["Kızılırmak", "Fırat", "Sakarya", "Meriç"],
-  answer: 0
-});
-
-// 386
-questions.push({
-  q: "Dünya’nın en kalabalık ülkesi hangisidir?",
-  options: ["Çin", "Hindistan", "ABD", "Endonezya"],
-  answer: 1
-});
-
-// 387
-questions.push({
-  q: "Türkiye’nin en eski milli parkı hangisidir?",
-  options: ["Yozgat Çamlığı", "Uludağ", "Kazdağları", "Munzur Vadisi"],
-  answer: 0
-});
-
-// 388
-questions.push({
-  q: "Dünya’nın en büyük şelalesi hangisidir?",
-  options: ["Iguazu", "Victoria", "Niagara", "Angel"],
-  answer: 1
-});
-
-// 389
-questions.push({
-  q: "Türkiye’nin en kalabalık ikinci şehri hangisidir?",
-  options: ["Ankara", "İzmir", "Bursa", "Antalya"],
-  answer: 0
-});
-
-// 390
-questions.push({
-  q: "Dünya’nın en büyük mağarası hangisidir?",
-  options: ["Son Doong", "Altınbeşik", "Mammoth", "Postojna"],
-  answer: 0
-});
-
-// 391
-questions.push({
-  q: "Türkiye’nin ilk kadın büyükelçisi kimdir?",
-  options: ["Filiz Dinçmen", "Türkan Akyol", "Tansu Çiller", "Fatma Şahin"],
-  answer: 0
-});
-
-// 392
-questions.push({
-  q: "Dünya’nın en hızlı uçağı hangisidir?",
-  options: ["Concorde", "SR-71 Blackbird", "F-22 Raptor", "MiG-25"],
-  answer: 1
-});
-
-// 393
-questions.push({
-  q: "Türkiye’nin en eski tiyatrosu hangi şehirdedir?",
-  options: ["İzmir", "İstanbul", "Bursa", "Ankara"],
-  answer: 1
-});
-
-// 394
-questions.push({
-  q: "Dünya’nın en çok ziyaret edilen ülkesi hangisidir?",
-  options: ["Fransa", "İtalya", "İspanya", "ABD"],
-  answer: 0
-});
-
-// 395
-questions.push({
-  q: "Türkiye’nin en uzun kara sınırı hangi ülkeyledir?",
-  options: ["Suriye", "Yunanistan", "Ermenistan", "Irak"],
-  answer: 0
-});
-
-// 396
-questions.push({
-  q: "Dünya’nın en yüksek şelalesi hangi ülkededir?",
-  options: ["Venezuela", "Kanada", "ABD", "Brezilya"],
-  answer: 0
-});
-
-// 397
-questions.push({
-  q: "Türkiye’nin en büyük doğal gölü hangisidir?",
-  options: ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
-  answer: 0
-});
-
-// 398
-questions.push({
-  q: "Dünya’nın en büyük çayı hangisidir?",
-  options: ["Amazon", "Nil", "Yangtze", "Mississippi"],
-  answer: 0
-});
-
-// 399
-questions.push({
-  q: "Türkiye’nin ilk kadın köy muhtarı kimdir?",
-  options: ["Gül Esin", "Müfide İlhan", "Türkan Akyol", "Afet İnan"],
-  answer: 0
-});
-
-// 400
-questions.push({
-  q: "Dünya’nın en büyük spor organizasyonu hangisidir?",
-  options: ["Olimpiyat Oyunları", "Dünya Kupası", "Şampiyonlar Ligi", "NBA"],
-  answer: 0
-});
-// 401
-questions.push({
-  q: "Türkiye’nin en büyük tarım ovası hangisidir?",
-  options: ["Çukurova", "Konya Ovası", "Gediz Ovası", "Harran Ovası"],
-  answer: 1
-});
-
-// 402
-questions.push({
-  q: "Dünya’nın en uzun tren yolu ağı hangi ülkededir?",
-  options: ["Rusya", "Çin", "ABD", "Hindistan"],
-  answer: 0
-});
-
-// 403
-questions.push({
-  q: "Türkiye’nin en büyük camisi hangisidir?",
-  options: ["Çamlıca Camii", "Süleymaniye", "Selimiye", "Ayasofya"],
-  answer: 0
-});
-
-// 404
-questions.push({
-  q: "Dünya’nın en kalabalık havaalanı hangi şehirde bulunur?",
-  options: ["Atlanta", "Pekin", "Dubai", "Londra"],
-  answer: 0
-});
-
-// 405
-questions.push({
-  q: "Türkiye’nin ilk kadın dışişleri bakanı kimdir?",
-  options: ["Tansu Çiller", "Türkan Akyol", "Filiz Dinçmen", "Fatma Şahin"],
-  answer: 1
-});
-
-// 406
-questions.push({
-  q: "Dünya’nın en eski yazılı destanı hangisidir?",
-  options: ["Gılgamış Destanı", "İlyada", "Odysseia", "Şehname"],
-  answer: 0
-});
-
-// 407
-questions.push({
-  q: "Türkiye’nin en yüksek dağı hangisidir?",
-  options: ["Ağrı Dağı", "Kaçkar Dağı", "Erciyes", "Uludağ"],
-  answer: 0
-});
-
-// 408
-questions.push({
-  q: "Dünya’nın en çok konuşulan ikinci dili hangisidir?",
-  options: ["İngilizce", "İspanyolca", "Hintçe", "Arapça"],
-  answer: 1
-});
-
-// 409
-questions.push({
-  q: "Türkiye’nin ilk kadın bakanı kimdir?",
-  options: ["Türkan Akyol", "Müfide İlhan", "Filiz Dinçmen", "Tansu Çiller"],
-  answer: 0
-});
-
-// 410
-questions.push({
-  q: "Dünya’nın en büyük internet şirketi hangisidir?",
-  options: ["Google", "Amazon", "Apple", "Microsoft"],
-  answer: 0
-});
-
-// 411
-questions.push({
-  q: "Türkiye’nin en uzun tüneli hangisidir?",
-  options: ["Ovit Tüneli", "Zigana Tüneli", "Bolu Dağı Tüneli", "Marmaray"],
-  answer: 0
-});
-
-// 412
-questions.push({
-  q: "Dünya’nın en büyük adalar ülkesi hangisidir?",
-  options: ["Endonezya", "Filipinler", "Japonya", "İzlanda"],
-  answer: 0
-});
-
-// 413
-questions.push({
-  q: "Türkiye’nin en eski gazetesi hangisidir?",
-  options: ["Takvim-i Vekayi", "Cumhuriyet", "Tercüman-ı Ahval", "Sabah"],
-  answer: 0
-});
-
-// 414
-questions.push({
-  q: "Dünya’nın en çok izlenen spor dalı hangisidir?",
-  options: ["Futbol", "Basketbol", "Kriket", "Tenis"],
-  answer: 0
-});
-
-// 415
-questions.push({
-  q: "Türkiye’nin ilk kadın kaymakamı kimdir?",
-  options: ["Özlem Bozkurt", "Filiz Dinçmen", "Müfide İlhan", "Lale Aytaman"],
-  answer: 0
-});
-
-// 416
-questions.push({
-  q: "Dünya’nın en yüksek dağı hangisidir?",
-  options: ["Everest", "K2", "Kangchenjunga", "Lhotse"],
-  answer: 0
-});
-
-// 417
-questions.push({
-  q: "Türkiye’nin ilk özel televizyon kanalı hangisidir?",
-  options: ["Star TV", "Show TV", "ATV", "Kanal D"],
-  answer: 0
-});
-
-// 418
-questions.push({
-  q: "Dünya’nın en hızlı trenleri hangi ülkededir?",
-  options: ["Japonya", "Çin", "Fransa", "Almanya"],
-  answer: 1
-});
-
-// 419
-questions.push({
-  q: "Türkiye’nin en büyük ormanı hangi ilde bulunur?",
-  options: ["Artvin", "Kastamonu", "Antalya", "Rize"],
-  answer: 1
-});
-
-// 420
-questions.push({
-  q: "Dünya’nın en geniş yüz ölçümüne sahip ülkesi hangisidir?",
-  options: ["Rusya", "Kanada", "Çin", "ABD"],
-  answer: 0
-});
-
-// 421
-questions.push({
-  q: "Türkiye’nin ilk kadın başbakanı kimdir?",
-  options: ["Tansu Çiller", "Türkan Akyol", "Filiz Dinçmen", "Lale Aytaman"],
-  answer: 0
-});
-
-// 422
-questions.push({
-  q: "Dünya’nın en büyük gökdeleni hangi şehirde bulunur?",
-  options: ["Dubai", "Şanghay", "New York", "Kuala Lumpur"],
-  answer: 0
-});
-
-// 423
-questions.push({
-  q: "Türkiye’nin en büyük gökdeleni hangi şehirdedir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 0
-});
-
-// 424
-questions.push({
-  q: "Dünya’nın en hızlı hayvanı havada hangisidir?",
-  options: ["Gökdoğan", "Albatros", "Şahin", "Kartal"],
-  answer: 0
-});
-
-// 425
-questions.push({
-  q: "Türkiye’nin ilk kadın senatörü kimdir?",
-  options: ["Feriha Sanerk", "Türkan Akyol", "Sabiha Sertel", "Müfide İlhan"],
-  answer: 0
-});
-
-// 426
-questions.push({
-  q: "Dünya’nın en büyük hayvanı hangisidir?",
-  options: ["Mavi Balina", "Fil", "Katil Balina", "Balina Köpekbalığı"],
-  answer: 0
-});
-
-// 427
-questions.push({
-  q: "Türkiye’nin en büyük maden rezervi hangi maddedir?",
-  options: ["Bor", "Kömür", "Demir", "Bakır"],
-  answer: 0
-});
-
-// 428
-questions.push({
-  q: "Dünya’nın en büyük ticaret örgütü hangisidir?",
-  options: ["WTO", "NATO", "AB", "OPEC"],
-  answer: 0
-});
-
-// 429
-questions.push({
-  q: "Türkiye’nin ilk kadın rektör yardımcısı kimdir?",
-  options: ["Türkan Akyol", "Müfide İlhan", "Filiz Dinçmen", "Lale Aytaman"],
-  answer: 0
-});
-
-// 430
-questions.push({
-  q: "Dünya’nın en geniş çölü hangisidir?",
-  options: ["Antarktika", "Sahara", "Gobi", "Kalahari"],
-  answer: 0
-});
-
-// 431
-questions.push({
-  q: "Türkiye’nin en kalabalık ilçesi hangisidir?",
-  options: ["Esenyurt", "Bağcılar", "Keçiören", "Çankaya"],
-  answer: 0
-});
-
-// 432
-questions.push({
-  q: "Dünya’nın en çok kullanılan sosyal medya platformu hangisidir?",
-  options: ["Facebook", "YouTube", "Instagram", "TikTok"],
-  answer: 1
-});
-
-// 433
-questions.push({
-  q: "Türkiye’nin ilk kadın öğretmeni kimdir?",
-  options: ["Refet Angın", "Afet İnan", "Halide Edip", "Sabiha Gökçen"],
-  answer: 0
-});
-
-// 434
-questions.push({
-  q: "Dünya’nın en büyük gölü hangisidir?",
-  options: ["Hazar Gölü", "Tanganika", "Baykal", "Michigan"],
-  answer: 0
-});
-
-// 435
-questions.push({
-  q: "Türkiye’nin en çok turist çeken ili hangisidir?",
-  options: ["Antalya", "İstanbul", "İzmir", "Muğla"],
-  answer: 0
-});
-
-// 436
-questions.push({
-  q: "Dünya’nın en büyük futbol turnuvası hangisidir?",
-  options: ["Dünya Kupası", "Avrupa Şampiyonası", "Copa America", "Afrika Kupası"],
-  answer: 0
-});
-
-// 437
-questions.push({
-  q: "Türkiye’nin ilk kadın dekanı kimdir?",
-  options: ["Türkan Akyol", "Filiz Dinçmen", "Müfide İlhan", "Lale Aytaman"],
-  answer: 0
-});
-
-// 438
-questions.push({
-  q: "Dünya’nın en hızlı bilgisayarı hangi ülkededir?",
-  options: ["ABD", "Japonya", "Çin", "Almanya"],
-  answer: 2
-});
-
-// 439
-questions.push({
-  q: "Türkiye’nin en geniş yüz ölçümüne sahip ili hangisidir?",
-  options: ["Konya", "Sivas", "Ankara", "Erzurum"],
-  answer: 0
-});
-
-// 440
-questions.push({
-  q: "Dünya’nın en yüksek binası hangisidir?",
-  options: ["Burj Khalifa", "Shanghai Tower", "Abraj Al-Bait", "One World Trade Center"],
-  answer: 0
-});
-
-// 441
-questions.push({
-  q: "Türkiye’nin en yüksek şelalesi hangisidir?",
-  options: ["Tortum", "Manavgat", "Kurşunlu", "Muradiye"],
-  answer: 0
-});
-
-// 442
-questions.push({
-  q: "Dünya’nın en çok kullanılan dil ailesi hangisidir?",
-  options: ["Hint-Avrupa", "Çin-Tibet", "Afro-Asyatik", "Ural-Altay"],
-  answer: 0
-});
-
-// 443
-questions.push({
-  q: "Türkiye’nin ilk kadın avukatı kimdir?",
-  options: ["Süreyya Ağaoğlu", "Afet İnan", "Türkan Akyol", "Halide Edip"],
-  answer: 0
-});
-
-// 444
-questions.push({
-  q: "Dünya’nın en büyük ticaret limanı hangi ülkededir?",
-  options: ["Çin", "ABD", "Almanya", "Singapur"],
-  answer: 0
-});
-
-// 445
-questions.push({
-  q: "Türkiye’nin en kalabalık köyü hangi ildedir?",
-  options: ["Van", "Şanlıurfa", "Erzurum", "Kars"],
-  answer: 1
-});
-
-// 446
-questions.push({
-  q: "Dünya’nın en büyük adalar topluluğu hangisidir?",
-  options: ["Endonezya", "Filipinler", "Japonya", "Karayipler"],
-  answer: 0
-});
-
-// 447
-questions.push({
-  q: "Türkiye’nin ilk kadın savcısı kimdir?",
-  options: ["Melahat Ruacan", "Türkan Akyol", "Süreyya Ağaoğlu", "Müfide İlhan"],
-  answer: 0
-});
-
-// 448
-questions.push({
-  q: "Dünya’nın en çok nüfus yoğunluğu olan ülkesi hangisidir?",
-  options: ["Monako", "Singapur", "Bangladeş", "Hindistan"],
-  answer: 0
-});
-
-// 449
-questions.push({
-  q: "Türkiye’nin en yüksek platosu hangisidir?",
-  options: ["Erzurum-Kars Platosu", "Bozok", "Uzunyayla", "Haymana"],
-  answer: 0
-});
-
-// 450
-questions.push({
-  q: "Dünya’nın en büyük yarımadası hangisidir?",
-  options: ["Arap Yarımadası", "İskandinavya", "Anadolu", "Hindistan"],
-  answer: 0
-});
-questions.push(
- // 450
-questions.push({
-  q: "Türkiye’nin en doğusundaki şehir hangisidir?",
-  options: ["Iğdır", "Kars", "Van", "Ağrı"],
-  answer: 0
-});
-
-// 451
-questions.push({
-  q: "Leonardo da Vinci’nin ünlü tablosu hangisidir?",
-  options: ["Yıldızlı Gece", "Mona Lisa", "Çığlık", "İnci Küpeli Kız"],
-  answer: 1
-});
-
-// 452
-questions.push({
-  q: "En küçük asal sayı hangisidir?",
-  options: ["0", "1", "2", "3"],
-  answer: 2
-});
-
-// 453
-questions.push({
-  q: "Kutup ayılarının doğal yaşam alanı neresidir?",
-  options: ["Antarktika", "Arktik Bölgesi", "Sibirya", "Kanada"],
-  answer: 1
-});
-
-// 454
-questions.push({
-  q: "'Nutuk' hangi lider tarafından yazılmıştır?",
-  options: ["Mustafa Kemal Atatürk", "İsmet İnönü", "Kazım Karabekir", "Fevzi Çakmak"],
-  answer: 0
-});
-
-// 455
-questions.push({
-  q: "Dünyada en fazla kullanılan dil hangisidir?",
-  options: ["İngilizce", "Çince", "İspanyolca", "Hintçe"],
-  answer: 1
-});
-
-// 456
-questions.push({
-  q: "İnsan vücudunda kaç adet akciğer vardır?",
-  options: ["1", "2", "3", "4"],
-  answer: 1
-});
-
-// 457
-questions.push({
-  q: "Ay’ın dünyaya olan ortalama uzaklığı yaklaşık kaç km’dir?",
-  options: ["38.000", "384.000", "3.800.000", "38.000.000"],
-  answer: 1
-});
-
-// 458
-questions.push({
-  q: "Hangisi yenilebilir bir mantar türüdür?",
-  options: ["Amanita muscaria", "Kültür Mantarı", "Sinek Mantarı", "Şeytan Mantarı"],
-  answer: 1
-});
-
-// 459
-questions.push({
-  q: "Dünyada en fazla konuşulan ikinci dil hangisidir?",
-  options: ["İngilizce", "İspanyolca", "Fransızca", "Arapça"],
-  answer: 1
-});
-
-// 460
-questions.push({
-  q: "DNA’nın çift sarmal yapısını kim keşfetmiştir?",
-  options: ["Newton ve Einstein", "Watson ve Crick", "Curie ve Rutherford", "Pasteur ve Darwin"],
-  answer: 1
-});
-
-// 461
-questions.push({
-  q: "Türkiye’nin en yüksek dağı hangisidir?",
-  options: ["Erciyes", "Kaçkar", "Ağrı Dağı", "Uludağ"],
-  answer: 2
-});
-
-// 462
-questions.push({
-  q: "Güneş sisteminde halkalarıyla ünlü gezegen hangisidir?",
-  options: ["Jüpiter", "Satürn", "Uranüs", "Neptün"],
-  answer: 1
-});
-
-// 463
-questions.push({
-  q: "Hangisi bir gök cismi değildir?",
-  options: ["Asteroit", "Kuyruklu Yıldız", "Gezegen", "Mikroskop"],
-  answer: 3
-});
-
-// 464
-questions.push({
-  q: "Türkiye’nin en uzun nehri hangisidir?",
-  options: ["Fırat", "Kızılırmak", "Dicle", "Meriç"],
-  answer: 1
-});
-
-// 465
-questions.push({
-  q: "Hangisi yenilenebilir enerji kaynağıdır?",
-  options: ["Kömür", "Petrol", "Rüzgar", "Doğalgaz"],
-  answer: 2
-});
-
-// 466
-questions.push({
-  q: "Atom numarası 1 olan element hangisidir?",
-  options: ["Oksijen", "Hidrojen", "Helyum", "Azot"],
-  answer: 1
-});
-
-// 467
-questions.push({
-  q: "Hangisi bir bilgisayar programlama dilidir?",
-  options: ["Python", "HTML", "CSS", "Hepsi"],
-  answer: 3
-});
-
-// 468
-questions.push({
-  q: "Türkiye’nin başkenti neresidir?",
-  options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-  answer: 1
-});
-
-// 469
-questions.push({
-  q: "Hangisi iç Anadolu bölgesinde değildir?",
-  options: ["Konya", "Eskişehir", "Nevşehir", "Trabzon"],
-  answer: 3
-});
-
-// 470
-questions.push({
-  q: "Dünya’nın uydusu hangisidir?",
-  options: ["Ganymede", "Ay", "Europa", "Titan"],
-  answer: 1
-});
-
-// 471
-questions.push({
-  q: "İnsan kanında oksijen taşıyan madde nedir?",
-  options: ["Lökosit", "Hemoglobin", "Plazma", "Trombosit"],
-  answer: 1
-});
-
-// 472
-questions.push({
-  q: "Türkiye’nin yüzölçümü bakımından en küçük ili hangisidir?",
-  options: ["Bartın", "Yalova", "Kilis", "Bayburt"],
-  answer: 1
-});
-
-// 473
-questions.push({
-  q: "Hangisi bir doğal afet değildir?",
-  options: ["Deprem", "Sel", "Rüzgar Türbini", "Volkan Patlaması"],
-  answer: 2
-});
-
-// 474
-questions.push({
-  q: "Einstein’ın ünlü denklemi hangisidir?",
-  options: ["F=ma", "E=mc²", "PV=nRT", "a²+b²=c²"],
-  answer: 1
-});
-
-// 475
-questions.push({
-  q: "Türkiye’nin ilk kadın pilotu kimdir?",
-  options: ["Sabiha Gökçen", "Afet İnan", "Halide Edip", "Nene Hatun"],
-  answer: 0
-});
-
-// 476
-questions.push({
-  q: "Hangi gezegen kırmızı gezegen olarak bilinir?",
-  options: ["Mars", "Venüs", "Merkür", "Satürn"],
-  answer: 0
-});
-
-// 477
-questions.push({
-  q: "Dünya’nın en büyük okyanusu hangisidir?",
-  options: ["Atlantik", "Hint", "Pasifik", "Arktik"],
-  answer: 2
-});
-
-// 478
-questions.push({
-  q: "Hangisi müzik aleti değildir?",
-  options: ["Gitar", "Keman", "Piyano", "Fırın"],
-  answer: 3
-});
-
-// 479
-questions.push({
-  q: "Türk Lirası hangi yıl yeniden tedavüle girmiştir?",
-  options: ["2002", "2005", "2008", "2010"],
-  answer: 1
-});
-
-// 480
-questions.push({
-  q: "İstanbul Boğazı’nı geçen ilk Osmanlı padişahı kimdir?",
-  options: ["Yavuz Sultan Selim", "Fatih Sultan Mehmet", "Kanuni Sultan Süleyman", "Orhan Gazi"],
-  answer: 3
-});
-
-// 481
-questions.push({
-  q: "İnsan vücudundaki en güçlü kas hangisidir?",
-  options: ["Dil", "Bacak", "Kalp", "Çene"],
-  answer: 3
-});
-
-// 482
-questions.push({
-  q: "Elektriği bulan bilim insanı kimdir?",
-  options: ["Edison", "Tesla", "Faraday", "Ampere"],
-  answer: 2
-});
-
-// 483
-questions.push({
-  q: "Türkiye’nin milli içeceği nedir?",
-  options: ["Ayran", "Çay", "Kahve", "Şalgam"],
-  answer: 0
-});
-
-// 484
-questions.push({
-  q: "Dünya’nın en yüksek şelalesi hangisidir?",
-  options: ["Niagara", "Angel", "Victoria", "Iguazu"],
-  answer: 1
-});
-
-// 485
-questions.push({
-  q: "Galatasaray’ın kurucusu kimdir?",
-  options: ["Ali Sami Yen", "Mustafa Kemal", "Adnan Menderes", "Süleyman Seba"],
-  answer: 0
-});
-
-// 486
-questions.push({
-  q: "Mona Lisa tablosu hangi müzede sergilenmektedir?",
-  options: ["Louvre", "British Museum", "Vatikan", "Prado"],
-  answer: 0
-});
-
-// 487
-questions.push({
-  q: "Türkiye’nin ilk yerli otomobili hangisidir?",
-  options: ["Devrim", "Anadol", "TOGG", "Kartal"],
-  answer: 0
-});
-
-// 488
-questions.push({
-  q: "İlk Türk kadın tiyatro sanatçısı kimdir?",
-  options: ["Afife Jale", "Halide Edip", "Sabiha Sertel", "Muazzez Abacı"],
-  answer: 0
-});
-
-// 489
-questions.push({
-  q: "Türkiye’nin en büyük gölü hangisidir?",
-  options: ["Tuz Gölü", "Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
-  answer: 1
-});
-
-// 490
-questions.push({
-  q: "Hangi gezegenin bir günü, bir yılından uzundur?",
-  options: ["Mars", "Venüs", "Merkür", "Jüpiter"],
-  answer: 1
-});
-
-// 491
-questions.push({
-  q: "Hangisi bilgisayar donanımı değildir?",
-  options: ["RAM", "CPU", "Mouse", "Python"],
-  answer: 3
-});
-
-// 492
-questions.push({
-  q: "Türkiye’nin en büyük adası hangisidir?",
-  options: ["Büyükada", "Bozcaada", "Gökçeada", "Marmara Adası"],
-  answer: 2
-});
-
-// 493
-questions.push({
-  q: "Hangisi bir gezegen değildir?",
-  options: ["Plüton", "Mars", "Jüpiter", "Dünya"],
-  answer: 0
-});
-
-// 494
-questions.push({
-  q: "Dünyanın en uzun nehri hangisidir?",
-  options: ["Amazon", "Nil", "Mississippi", "Ganj"],
-  answer: 1
-});
-
-// 495
-questions.push({
-  q: "Türkiye’nin ilk Cumhurbaşkanı kimdir?",
-  options: ["Mustafa Kemal Atatürk", "İsmet İnönü", "Celal Bayar", "Adnan Menderes"],
-  answer: 0
-});
-
-// 496
-questions.push({
-  q: "Hangisi gezegenlerin uydusu değildir?",
-  options: ["Europa", "Titan", "Ganymede", "Sirius"],
-  answer: 3
-});
-
-// 497
-questions.push({
-  q: "Hangisi Türk edebiyatında bir yazar değildir?",
-  options: ["Orhan Pamuk", "Yaşar Kemal", "Nazım Hikmet", "Mozart"],
-  answer: 3
-});
-
-// 498
-questions.push({
-  q: "Türkiye’nin en eski üniversitelerinden biri hangisidir?",
-  options: ["Boğaziçi", "İstanbul Üniversitesi", "ODTÜ", "Ankara Üniversitesi"],
-  answer: 1
-});
-
-// 499
-questions.push({
-  q: "Hangisi canlıların ortak özelliklerinden biri değildir?",
-  options: ["Hücre yapısı", "Üreme", "Solunum", "Taş olma"],
-  answer: 3
-});
-
-// 500
-questions.push({
-  q: "Dünyanın en büyük kıtası hangisidir?",
-  options: ["Afrika", "Asya", "Avrupa", "Amerika"],
-  answer: 1
-});
+const questions = [
+  {
+    q: "Türkiye’nin başkenti neresidir?",
+    options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
+    answer: 1
+  },
+  {
+    q: "Cumhuriyet hangi yıl ilan edilmiştir?",
+    options: ["1920", "1923", "1938", "1919"],
+    answer: 1
+  },
+  {
+    q: "Dünyanın en büyük okyanusu hangisidir?",
+    options: ["Atlas", "Hint", "Büyük Okyanus", "Arktik"],
+    answer: 2
+  },
+  {
+    q: "5 x 6 kaçtır?",
+    options: ["20", "25", "30", "35"],
+    answer: 2
+  },
+  {
+    q: "En hızlı kara hayvanı hangisidir?",
+    options: ["Aslan", "Çita", "Kaplan", "At"],
+    answer: 1
+  },
+  {
+    q: "İnsan vücudunda kaç kemik vardır?",
+    options: ["180", "206", "220", "250"],
+    answer: 1
+  },
+  {
+    q: "Dünya’nın uydusunun adı nedir?",
+    options: ["Ay", "Güneş", "Venüs", "Jüpiter"],
+    answer: 0
+  },
+  {
+    q: "Osmanlı Devleti hangi yılda yıkılmıştır?",
+    options: ["1918", "1920", "1922", "1923"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en uzun nehri hangisidir?",
+    options: ["Fırat", "Kızılırmak", "Dicle", "Sakarya"],
+    answer: 1
+  },
+  {
+    q: "Yer çekimini kim keşfetmiştir?",
+    options: ["Albert Einstein", "Galileo Galilei", "Isaac Newton", "Thomas Edison"],
+    answer: 2
+  },
+
+  {
+    q: "İstanbul hangi yılda fethedilmiştir?",
+    options: ["1453", "1071", "1923", "1402"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en yüksek dağı hangisidir?",
+    options: ["Erciyes", "Kaçkar", "Ağrı Dağı", "Uludağ"],
+    answer: 2
+  },
+  {
+    q: "Dünyanın en küçük kıtası hangisidir?",
+    options: ["Avrupa", "Avustralya", "Asya", "Afrika"],
+    answer: 1
+  },
+  {
+    q: "Güneş sisteminde en büyük gezegen hangisidir?",
+    options: ["Mars", "Jüpiter", "Dünya", "Satürn"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin para birimi nedir?",
+    options: ["Euro", "Dolar", "Türk Lirası", "Sterlin"],
+    answer: 2
+  },
+  {
+    q: "Kan dolaşımını kim keşfetmiştir?",
+    options: ["William Harvey", "Louis Pasteur", "Robert Koch", "İbn-i Sina"],
+    answer: 0
+  },
+  {
+    q: "Ankara hangi coğrafi bölgede yer alır?",
+    options: ["Ege", "Marmara", "İç Anadolu", "Karadeniz"],
+    answer: 2
+  },
+  {
+    q: "Dünyada kaç kıta vardır?",
+    options: ["5", "6", "7", "8"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük gölü hangisidir?",
+    options: ["Tuz Gölü", "Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
+    answer: 1
+  },
+  {
+    q: "DNA’yı kim keşfetmiştir?",
+    options: ["Watson ve Crick", "Newton", "Darwin", "Edison"],
+    answer: 0
+  },
+
+  {
+    q: "İlk Türk Devleti hangisidir?",
+    options: ["Göktürkler", "Hunlar", "Selçuklular", "Osmanlılar"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en kalabalık şehri hangisidir?",
+    options: ["Ankara", "İzmir", "İstanbul", "Bursa"],
+    answer: 2
+  },
+  {
+    q: "E=mc² formülü kime aittir?",
+    options: ["Newton", "Tesla", "Einstein", "Faraday"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin üç tarafı hangi denizlerle çevrilidir?",
+    options: ["Karadeniz, Akdeniz, Ege", "Marmara, Akdeniz, Karadeniz", "Ege, Marmara, Karadeniz", "Akdeniz, Ege, Marmara"],
+    answer: 0
+  },
+  {
+    q: "İlk çağ uygarlıklarından hangisi yazıyı bulmuştur?",
+    options: ["Sümerler", "Hititler", "Mısırlılar", "Urartular"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en yüksek dağı hangisidir?",
+    options: ["Ağrı", "Everest", "Elbruz", "Kilimanjaro"],
+    answer: 1
+  },
+  {
+    q: "Mona Lisa tablosunu kim yapmıştır?",
+    options: ["Picasso", "Leonardo da Vinci", "Van Gogh", "Michelangelo"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin resmi dili hangisidir?",
+    options: ["Arapça", "Türkçe", "Kürtçe", "İngilizce"],
+    answer: 1
+  },
+  {
+    q: "En uzun ömürlü hayvan hangisidir?",
+    options: ["Kaplumbağa", "Fil", "Balina", "Karga"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en batıdaki ili hangisidir?",
+    options: ["Edirne", "Çanakkale", "Muğla", "İzmir"],
+    answer: 0
+  },
+
+  {
+    q: "Atomu ilk tanımlayan bilim insanı kimdir?",
+    options: ["Demokritos", "Newton", "Einstein", "Curie"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk Cumhurbaşkanı kimdir?",
+    options: ["İsmet İnönü", "Mustafa Kemal Atatürk", "Celal Bayar", "Adnan Menderes"],
+    answer: 1
+  },
+  {
+    q: "Sesin yayılmadığı ortam hangisidir?",
+    options: ["Hava", "Su", "Boşluk (vakum)", "Metal"],
+    answer: 2
+  },
+  {
+    q: "Dünya’nın şekli nedir?",
+    options: ["Küre", "Geoide yakın", "Silindir", "Düz"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin güneyinde hangi deniz bulunur?",
+    options: ["Karadeniz", "Akdeniz", "Ege", "Marmara"],
+    answer: 1
+  },
+  {
+    q: "Ampulü kim icat etmiştir?",
+    options: ["Newton", "Edison", "Tesla", "Faraday"],
+    answer: 1
+  },
+  {
+    q: "Dünya’nın en büyük çölü hangisidir?",
+    options: ["Gobi", "Sahara", "Karakum", "Atacama"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en büyük adası hangisidir?",
+    options: ["Gökçeada", "Bozcaada", "Kıbrıs", "Marmara Adası"],
+    answer: 0
+  },
+  {
+    q: "Telefonu kim icat etmiştir?",
+    options: ["Edison", "Alexander Graham Bell", "Tesla", "Marconi"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en doğusundaki ili hangisidir?",
+    options: ["Iğdır", "Kars", "Hakkari", "Van"],
+    answer: 0
+  },
+
+  {
+    q: "En kalabalık ülke hangisidir?",
+    options: ["ABD", "Çin", "Hindistan", "Rusya"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin üç büyük şehri hangileridir?",
+    options: ["İstanbul, Ankara, İzmir", "İstanbul, Bursa, İzmir", "Ankara, İzmir, Antalya", "İstanbul, Ankara, Adana"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin yüzölçümü bakımından en büyük ili hangisidir?",
+    options: ["Konya", "Sivas", "Ankara", "Van"],
+    answer: 0
+  },
+  {
+    q: "Uzaya çıkan ilk insan kimdir?",
+    options: ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "Valentina Tereshkova"],
+    answer: 1
+  },
+  {
+    q: "İlk çağ uygarlıklarından hangisi piramitleriyle ünlüdür?",
+    options: ["Sümerler", "Mısırlılar", "Hititler", "Urartular"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin kuzeyinde hangi deniz bulunur?",
+    options: ["Akdeniz", "Ege", "Karadeniz", "Marmara"],
+    answer: 2
+  },
+  {
+    q: "Rönesans hangi ülkede başlamıştır?",
+    options: ["Fransa", "İspanya", "İtalya", "Almanya"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin nüfusu en az olan ili hangisidir?",
+    options: ["Bayburt", "Tunceli", "Ardahan", "Gümüşhane"],
+    answer: 0
+  },
+  {
+    q: "Kâğıdı kim bulmuştur?",
+    options: ["Türkler", "Çinliler", "Yunanlılar", "Araplar"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin doğusunda hangi ülke yoktur?",
+    options: ["İran", "Gürcistan", "Ermenistan", "Yunanistan"],
+    answer: 3
+  }
+];
+// 51–100
+  {
+    q: "Türk Dil Kurumu hangi yıl kurulmuştur?",
+    options: ["1928", "1932", "1935", "1940"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en büyük yüzölçümüne sahip gölü hangisidir?",
+    options: ["Tuz Gölü", "Van Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
+    answer: 1
+  },
+  {
+    q: "İlk çağ uygarlıklarından hangisi tekerleği icat etmiştir?",
+    options: ["Sümerler", "Mısırlılar", "Hititler", "Urartular"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin milli marşı hangisidir?",
+    options: ["Onuncu Yıl Marşı", "İzmir Marşı", "İstiklal Marşı", "Mehter Marşı"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en yüksek şelalesi hangisidir?",
+    options: ["Manavgat", "Muradiye", "Tortum", "Tomara"],
+    answer: 2
+  },
+  {
+    q: "Türk bayrağındaki yıldızın kaç köşesi vardır?",
+    options: ["4", "5", "6", "8"],
+    answer: 1
+  },
+  {
+    q: "Avrupa Birliği’nin merkezi nerededir?",
+    options: ["Paris", "Brüksel", "Berlin", "Roma"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın pilotu kimdir?",
+    options: ["Sabiha Gökçen", "Halide Edip", "Afet İnan", "Keriman Halis"],
+    answer: 0
+  },
+  {
+    q: "Türk lirasından 6 sıfır hangi yıl atılmıştır?",
+    options: ["2001", "2003", "2005", "2008"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük adası hangisidir?",
+    options: ["Bozcaada", "Gökçeada", "Kıbrıs", "Marmara Adası"],
+    answer: 1
+  },
+
+  {
+    q: "İlk Türk kadın tiyatro oyuncusu kimdir?",
+    options: ["Afife Jale", "Haldun Taner", "Gülriz Sururi", "Yıldız Kenter"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin batısında hangi deniz vardır?",
+    options: ["Marmara", "Karadeniz", "Akdeniz", "Ege"],
+    answer: 3
+  },
+  {
+    q: "İlk bilgisayarın adı nedir?",
+    options: ["ENIAC", "Windows", "Macintosh", "Atari"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın milletvekilleri hangi yılda seçilmiştir?",
+    options: ["1930", "1934", "1938", "1945"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en uzun köprüsü hangisidir?",
+    options: ["Yavuz Sultan Selim", "1915 Çanakkale", "Boğaziçi", "Osmangazi"],
+    answer: 1
+  },
+  {
+    q: "En çok konuşulan dil hangisidir?",
+    options: ["İngilizce", "Çince", "İspanyolca", "Arapça"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk üniversitesi hangisidir?",
+    options: ["İstanbul Üniversitesi", "Ankara Üniversitesi", "ODTÜ", "Boğaziçi Üniversitesi"],
+    answer: 0
+  },
+  {
+    q: "Hangi şehir iki kıtada yer alır?",
+    options: ["İzmir", "Ankara", "İstanbul", "Bursa"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük barajı hangisidir?",
+    options: ["Atatürk Barajı", "Keban Barajı", "Hirfanlı Barajı", "Ilısu Barajı"],
+    answer: 0
+  },
+  {
+    q: "Ay’a ilk ayak basan insan kimdir?",
+    options: ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "Alan Shepard"],
+    answer: 1
+  },
+
+  {
+    q: "Türkiye’nin en yüksek platosu hangisidir?",
+    options: ["Erzurum-Kars", "Obruk", "Taşeli", "Yazılıkaya"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın öğretmeni kimdir?",
+    options: ["Refet Angın", "Sabiha Gökçen", "Afet İnan", "Halide Edip"],
+    answer: 0
+  },
+  {
+    q: "Kutup ayıları nerede yaşar?",
+    options: ["Güney Kutbu", "Kuzey Kutbu", "Sibirya", "Kanada"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en eski camisi hangisidir?",
+    options: ["Ulu Cami (Diyarbakır)", "Ayasofya", "Süleymaniye", "Selimiye"],
+    answer: 0
+  },
+  {
+    q: "İlk Türk parası hangi devlet tarafından basılmıştır?",
+    options: ["Göktürkler", "Uygurlar", "Selçuklular", "Osmanlılar"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en büyük milli parkı hangisidir?",
+    options: ["Beydağları", "Munzur", "Ağrı Dağı", "Kızıldağ"],
+    answer: 2
+  },
+  {
+    q: "En uzun insan ömrü kaç yıldır?",
+    options: ["110", "115", "122", "130"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk özel televizyon kanalı hangisidir?",
+    options: ["Kanal D", "Show TV", "Star TV", "ATV"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en kuzeyindeki ili hangisidir?",
+    options: ["Sinop", "Samsun", "Trabzon", "Rize"],
+    answer: 0
+  },
+  {
+    q: "Kutup yıldızı hangi yönde bulunur?",
+    options: ["Güney", "Doğu", "Kuzey", "Batı"],
+    answer: 2
+  },
+
+  {
+    q: "Türkiye’nin ilk romanı hangisidir?",
+    options: ["Araba Sevdası", "Taaşşuk-ı Talat ve Fitnat", "Aşk-ı Memnu", "İntibah"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk havaalanı hangisidir?",
+    options: ["Yeşilköy", "Esenboğa", "Sabiha Gökçen", "Adnan Menderes"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en hızlı treni hangi ülkededir?",
+    options: ["Japonya", "Fransa", "Çin", "Almanya"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük körfezi hangisidir?",
+    options: ["İzmit", "İzmir", "Antalya", "Gökova"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın başbakanı kimdir?",
+    options: ["Tansu Çiller", "Sabiha Gökçen", "Afet İnan", "Türkan Saylan"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en sıcak ili hangisidir?",
+    options: ["Adana", "Şanlıurfa", "Antalya", "Mardin"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en soğuk ili hangisidir?",
+    options: ["Kars", "Erzurum", "Ağrı", "Ardahan"],
+    answer: 1
+  },
+  {
+    q: "İlk çağ uygarlıklarından hangisi yazıyı icat etmiştir?",
+    options: ["Mısırlılar", "Hititler", "Sümerler", "Urartular"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en kalabalık ilçesi hangisidir?",
+    options: ["Çankaya", "Bağcılar", "Küçükçekmece", "Esenyurt"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin en büyük doğal gölü hangisidir?",
+    options: ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
+    answer: 0
+  },
+
+  {
+    q: "Türkiye’nin ilk ulusal marşı hangisidir?",
+    options: ["İzmir Marşı", "İstiklal Marşı", "Onuncu Yıl Marşı", "Mehter Marşı"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en çok yağış alan bölgesi hangisidir?",
+    options: ["Marmara", "Akdeniz", "Karadeniz", "Ege"],
+    answer: 2
+  },
+  {
+    q: "En büyük Türk gölü hangisidir?",
+    options: ["Beyşehir", "Tuz", "Van", "Eğirdir"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın profesörü kimdir?",
+    options: ["Afet İnan", "Halide Edip", "Feriha Baymur", "Sabiha Sertel"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük yarımadası hangisidir?",
+    options: ["Kapıdağ", "Sinop", "Datça", "Anadolu"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin en büyük havaalanı hangisidir?",
+    options: ["Esenboğa", "Sabiha Gökçen", "İstanbul Havalimanı", "Adnan Menderes"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk yerli otomobili nedir?",
+    options: ["Anadol", "Tofaş", "Devrim", "TOGG"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en çok göl bulunan bölgesi hangisidir?",
+    options: ["Ege", "Marmara", "Akdeniz", "İç Anadolu"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en kalabalık köyü hangisidir?",
+    options: ["Yusufeli", "Mollaköy", "Derecik", "Köyceğiz"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın tiyatro oyuncusu kimdir?",
+    options: ["Afife Jale", "Yıldız Kenter", "Gülriz Sururi", "Türkan Şoray"],
+    answer: 0
+  }
+// 101–150
+  {
+    q: "Türkiye’nin ilk kadın savaş pilotu kimdir?",
+    options: ["Sabiha Gökçen", "Afet İnan", "Halide Edip", "Türkan Saylan"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en büyük adası hangisidir?",
+    options: ["Madagaskar", "Borneo", "Grönland", "Sumatra"],
+    answer: 2
+  },
+  {
+    q: "Türkçe hangi dil ailesine aittir?",
+    options: ["Arap", "Hint-Avrupa", "Ural-Altay", "Çin-Tibet"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük kömür rezervi hangi ildedir?",
+    options: ["Zonguldak", "Manisa", "Kütahya", "Afşin-Elbistan"],
+    answer: 3
+  },
+  {
+    q: "Dünyada en çok konuşulan ikinci dil hangisidir?",
+    options: ["İngilizce", "Çince", "İspanyolca", "Arapça"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en eski üniversitesi hangisidir?",
+    options: ["Ankara Üniversitesi", "İstanbul Üniversitesi", "Ege Üniversitesi", "ODTÜ"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın doktoru kimdir?",
+    options: ["Besim Ömer Akalın", "Safiye Ali", "Afet İnan", "Refet Angın"],
+    answer: 1
+  },
+  {
+    q: "Dünyanın en büyük şelalesi hangisidir?",
+    options: ["Niagara", "Victoria", "Angel", "Iguazu"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk yerli arabası nedir?",
+    options: ["TOGG", "Devrim", "Anadol", "Toros"],
+    answer: 1
+  },
+  {
+    q: "Osmanlı Devleti’nin kurucusu kimdir?",
+    options: ["Orhan Gazi", "Osman Gazi", "Fatih Sultan Mehmet", "Yavuz Sultan Selim"],
+    answer: 1
+  },
+
+  {
+    q: "Türkiye’nin en çok nüfus yoğunluğu olan ili hangisidir?",
+    options: ["İstanbul", "Ankara", "Kocaeli", "Bursa"],
+    answer: 0
+  },
+  {
+    q: "Türk edebiyatında ilk realist roman hangisidir?",
+    options: ["Araba Sevdası", "İntibah", "Mai ve Siyah", "Eylül"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük ovası hangisidir?",
+    options: ["Çukurova", "Harran", "Konya Ovası", "Erzurum Ovası"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en eski tiyatro binası hangisidir?",
+    options: ["Darülbedayi", "Naum Tiyatrosu", "AFM", "Cemal Reşit Rey"],
+    answer: 1
+  },
+  {
+    q: "Türkçe’de kaç harf vardır?",
+    options: ["28", "29", "30", "31"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en büyük dağı hangisidir?",
+    options: ["Kaçkar", "Erciyes", "Ağrı Dağı", "Toros"],
+    answer: 2
+  },
+  {
+    q: "Dünyanın en uzun sınırına sahip iki ülke hangisidir?",
+    options: ["ABD-Kanada", "Rusya-Çin", "Arjantin-Brezilya", "Hindistan-Pakistan"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın köy öğretmeni kimdir?",
+    options: ["Refet Angın", "Safiye Ali", "Sabiha Gökçen", "Satı Kadın"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin ilk radyosu hangi yılda açılmıştır?",
+    options: ["1927", "1930", "1935", "1940"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en büyük çölü hangisidir?",
+    options: ["Gobi", "Sahra", "Antarktika", "Karakum"],
+    answer: 2
+  },
+
+  {
+    q: "Türkiye’nin en doğusundaki noktası hangi ildir?",
+    options: ["Van", "Hakkari", "Iğdır", "Kars"],
+    answer: 2
+  },
+  {
+    q: "Dünyanın en küçük ülkesi hangisidir?",
+    options: ["Monako", "Vatikan", "San Marino", "Andorra"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en yüksek rakımlı şehri hangisidir?",
+    options: ["Erzurum", "Kars", "Sivas", "Bayburt"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın başbakanı kimdir?",
+    options: ["Tansu Çiller", "Meral Akşener", "Türkan Saylan", "Safiye Ali"],
+    answer: 0
+  },
+  {
+    q: "Türk tiyatrosunun kurucusu kimdir?",
+    options: ["Namık Kemal", "Ahmet Vefik Paşa", "Şinasi", "Haldun Taner"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk televizyon yayını hangi yılda başlamıştır?",
+    options: ["1960", "1965", "1968", "1970"],
+    answer: 2
+  },
+  {
+    q: "En kalabalık kıta hangisidir?",
+    options: ["Avrupa", "Afrika", "Asya", "Amerika"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk anayasası hangisidir?",
+    options: ["Kanun-i Esasi", "Teşkilat-ı Esasiye", "1924 Anayasası", "1961 Anayasası"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en büyük hayvanı hangisidir?",
+    options: ["Fil", "Mavi Balina", "Köpekbalığı", "Dev Kaplumbağa"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın belediye başkanı kimdir?",
+    options: ["Müfide İlhan", "Afet İnan", "Refet Angın", "Halide Edip"],
+    answer: 0
+  },
+
+  {
+    q: "Dünyanın en uzun nehri hangisidir?",
+    options: ["Amazon", "Nil", "Ganj", "Mississippi"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın gazetecisi kimdir?",
+    options: ["Afet İnan", "Sabiha Sertel", "Halide Nusret", "Nezihe Muhiddin"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk spor kulübü hangisidir?",
+    options: ["Fenerbahçe", "Galatasaray", "Beşiktaş", "Altay"],
+    answer: 2
+  },
+  {
+    q: "Dünya’nın en kalabalık şehri hangisidir?",
+    options: ["Şangay", "Tokyo", "Delhi", "İstanbul"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk opera sanatçısı kimdir?",
+    options: ["Afife Jale", "Semiha Berksoy", "Leyla Gencer", "Gülriz Sururi"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en çok göç alan ili hangisidir?",
+    options: ["Ankara", "Antalya", "İstanbul", "İzmir"],
+    answer: 2
+  },
+  {
+    q: "İlk Nobel ödüllü Türk kimdir?",
+    options: ["Aziz Sancar", "Orhan Pamuk", "Yaşar Kemal", "Halide Edip"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın profesörü kimdir?",
+    options: ["Afet İnan", "Halet Çambel", "Remziye Hisar", "Feriha Baymur"],
+    answer: 2
+  },
+  {
+    q: "Dünyanın en büyük volkanı hangisidir?",
+    options: ["Kilauea", "Mauna Loa", "Etna", "Fuji"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk özel bankası hangisidir?",
+    options: ["İş Bankası", "Garanti", "Akbank", "Yapı Kredi"],
+    answer: 0
+  },
+
+  {
+    q: "Türkiye’nin en yüksek ikinci dağı hangisidir?",
+    options: ["Cilo", "Erciyes", "Süphan", "Kaçkar"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın heykeltıraşı kimdir?",
+    options: ["Sabiha Sertel", "Yıldız Moran", "Sabiha Bengütaş", "Afife Jale"],
+    answer: 2
+  },
+  {
+    q: "Dünyanın en hızlı deniz memelisi hangisidir?",
+    options: ["Orka", "Yunus", "Kılıçbalığı", "Mavi Balina"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk milli parkı hangisidir?",
+    options: ["Köprülü Kanyon", "Yozgat Çamlığı", "Uludağ", "Munzur"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin en büyük limanı hangisidir?",
+    options: ["Mersin", "İzmir", "Haydarpaşa", "Ambarlı"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın ressamı kimdir?",
+    options: ["Hale Asaf", "Fahrelnissa Zeid", "Müfide Kadri", "Semiha Berksoy"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük futbol stadyumu hangisidir?",
+    options: ["Atatürk Olimpiyat", "Ali Sami Yen", "Şükrü Saracoğlu", "Vodafone Park"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en eski medeniyeti hangisidir?",
+    options: ["Hititler", "Sümerler", "Urartular", "Frigler"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın dışişleri bakanı kimdir?",
+    options: ["Meral Akşener", "Tansu Çiller", "Emine Çolak", "Fatma Şahin"],
+    answer: 1
+  },
+  {
+    q: "Dünya Sağlık Örgütü’nün merkezi nerededir?",
+    options: ["Paris", "Londra", "Cenevre", "Roma"],
+    answer: 2
+  }
+// 151–200
+  {
+    q: "Türkiye’nin ilk kadın avukatı kimdir?",
+    options: ["Süreyya Ağaoğlu", "Halide Edip", "Afet İnan", "Türkan Saylan"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en büyük okyanusu hangisidir?",
+    options: ["Atlas", "Hint", "Büyük Okyanus", "Arktik"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk milli uçağı hangisidir?",
+    options: ["Hürkuş", "ATAK", "Devrim", "Vecihi K-VI"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin en uzun mağarası hangisidir?",
+    options: ["İnsuyu", "Karain", "Pınargözü", "Damlataş"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın dekanı kimdir?",
+    options: ["Safiye Ali", "Remziye Hisar", "Prof. Dr. Nermin Abadan Unat", "Müfide İlhan"],
+    answer: 2
+  },
+  {
+    q: "Dünyanın en büyük kıtası hangisidir?",
+    options: ["Afrika", "Asya", "Avrupa", "Amerika"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk yerli tankı hangisidir?",
+    options: ["Altay", "Panter", "M60", "Süvari"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en yüksek şelalesi hangisidir?",
+    options: ["Tortum", "Muradiye", "Manavgat", "Kapuzbaşı"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin ilk kadın öğretmenlerinden biri kimdir?",
+    options: ["Refet Angın", "Satı Kadın", "Sabiha Gökçen", "Afife Jale"],
+    answer: 1
+  },
+  {
+    q: "Dünya’nın en büyük gölü hangisidir?",
+    options: ["Hazar", "Tuz Gölü", "Van", "Beyşehir"],
+    answer: 0
+  },
+
+  {
+    q: "Türkiye’nin ilk kadın bakanı kimdir?",
+    options: ["Müfide İlhan", "Türkan Akyol", "Tansu Çiller", "Afet İnan"],
+    answer: 1
+  },
+  {
+    q: "Dünyanın en kalabalık kıtası hangisidir?",
+    options: ["Afrika", "Asya", "Avrupa", "Amerika"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın muhtarı kimdir?",
+    options: ["Gül Esin", "Satı Kadın", "Refet Angın", "Sabiha Gökçen"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en uzun tüneli hangisidir?",
+    options: ["Ovit", "Zigana", "Boluca", "Ilgaz"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en hızlı kuşu hangisidir?",
+    options: ["Şahin", "Kartal", "Doğan", "Güvercin"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın vali yardımcısı kimdir?",
+    options: ["Lale Aytaman", "Nuriye Akman", "Sabiha Bengütaş", "Afet İnan"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın ilahiyat profesörü kimdir?",
+    options: ["Sabiha Sertel", "Huriye Martı", "Prof. Dr. Suat Yıldırım", "Afife Jale"],
+    answer: 1
+  },
+  {
+    q: "Dünya’nın en büyük adası hangisidir?",
+    options: ["Borneo", "Grönland", "Madagaskar", "Sumatra"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın belediye başkanı kimdir?",
+    options: ["Müfide İlhan", "Afet İnan", "Refet Angın", "Safiye Ali"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en yüksek barajı hangisidir?",
+    options: ["Deriner", "Atatürk", "Keban", "Ilısu"],
+    answer: 0
+  },
+
+  {
+    q: "Dünyanın en büyük nehri hangisidir?",
+    options: ["Nil", "Amazon", "Ganj", "Mississippi"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın milletvekili kimdir?",
+    options: ["Satı Kadın", "Afet İnan", "Şükûfe Nihal", "Mebrure Gönenç"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük adası hangisidir?",
+    options: ["Bozcaada", "Gökçeada", "Marmara", "Avşa"],
+    answer: 1
+  },
+  {
+    q: "Dünya’nın en hızlı kara hayvanı hangisidir?",
+    options: ["Ceylan", "Leopar", "Çita", "Aslan"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın belediye meclis üyesi kimdir?",
+    options: ["Benal Nevzat İstar Arıman", "Afet İnan", "Sabiha Gökçen", "Refet Angın"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük adası hangisidir?",
+    options: ["Gökçeada", "Bozcaada", "Kıbrıs", "Marmara"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın büyükelçisi kimdir?",
+    options: ["Filiz Dinçmen", "Emine Çolak", "Tansu Çiller", "Safiye Ali"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en yüksek dağı hangisidir?",
+    options: ["Kilimanjaro", "Everest", "Ağrı", "Elbruz"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın başsavcısı kimdir?",
+    options: ["Emine Ayna", "Hale Asaf", "Yıldız Moran", "Sevilay Çelenk"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük gölü hangisidir?",
+    options: ["Van", "Tuz", "Beyşehir", "Eğirdir"],
+    answer: 0
+  },
+
+  {
+    q: "Dünya’nın en kalabalık ülkesi hangisidir?",
+    options: ["Hindistan", "Çin", "ABD", "Endonezya"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın vali kimdir?",
+    options: ["Lale Aytaman", "Müfide İlhan", "Afet İnan", "Sabiha Bengütaş"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük camisi hangisidir?",
+    options: ["Çamlıca Camii", "Süleymaniye", "Ayasofya", "Selimiye"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en uzun demiryolu hangisidir?",
+    options: ["Trans Sibirya", "Orient Express", "İpek Yolu", "Berlin-Bağdat"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın kaymakamı kimdir?",
+    options: ["Refet Angın", "Gül Esin", "Ayşe Sıdıka Hanım", "Lale Aytaman"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en büyük yarımadası hangisidir?",
+    options: ["Anadolu", "Kapıdağ", "Sinop", "Datça"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en büyük adası hangisidir?",
+    options: ["Grönland", "Borneo", "Madagaskar", "Sumatra"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın profesörlerinden biri kimdir?",
+    options: ["Remziye Hisar", "Afet İnan", "Safiye Ali", "Lale Aytaman"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en yüksek dağı hangisidir?",
+    options: ["Ağrı", "Erciyes", "Süphan", "Kaçkar"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın sendika başkanı kimdir?",
+    options: ["Behice Boran", "Nermin Neftçi", "Fatma Seher Erden", "Zehra Kosova"],
+    answer: 3
+  }
+// 201–250
+  {
+    q: "Türkiye’nin ilk kadın profesörlerinden biri kimdir?",
+    options: ["Remziye Hisar", "Afet İnan", "Safiye Ali", "Halet Çambel"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en büyük kıtası hangisidir?",
+    options: ["Afrika", "Asya", "Avrupa", "Amerika"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın hakimi kimdir?",
+    options: ["Samiye Cahid Morkaya", "Sabiha Bengütaş", "Afife Jale", "Refet Angın"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en uzun köprüsü hangisidir?",
+    options: ["1915 Çanakkale", "Yavuz Sultan Selim", "Boğaziçi", "Osmangazi"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en yüksek şelalesi hangisidir?",
+    options: ["Niagara", "Angel", "Victoria", "Iguazu"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın belediye başkanı kimdir?",
+    options: ["Müfide İlhan", "Afet İnan", "Sabiha Gökçen", "Satı Kadın"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en kuzey noktası neresidir?",
+    options: ["Sinop İnceburun", "Hopa", "Trabzon", "Rize"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en kalabalık şehri hangisidir?",
+    options: ["Şangay", "Tokyo", "Delhi", "New York"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın tiyatro sanatçısı kimdir?",
+    options: ["Afife Jale", "Semiha Berksoy", "Yıldız Kenter", "Gülriz Sururi"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en batı noktası neresidir?",
+    options: ["Gökçeada", "Bozcaada", "İzmir", "Edirne"],
+    answer: 0
+  },
+
+  {
+    q: "Dünya’nın en büyük çölü hangisidir?",
+    options: ["Sahra", "Gobi", "Karakum", "Antarktika"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin ilk kadın tiyatro yazarı kimdir?",
+    options: ["Halide Edip", "Nezihe Muhiddin", "Afife Jale", "Müfide Kadri"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en doğu noktası neresidir?",
+    options: ["Iğdır-Aralık", "Hakkari", "Kars", "Van"],
+    answer: 0
+  },
+  {
+    q: "Dünyanın en uzun nehri hangisidir?",
+    options: ["Amazon", "Nil", "Ganj", "Mississippi"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın pilotu kimdir?",
+    options: ["Sabiha Gökçen", "Afet İnan", "Halide Edip", "Refet Angın"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en sıcak ili hangisidir?",
+    options: ["Antalya", "Adana", "Şanlıurfa", "Mardin"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın muhtarı kimdir?",
+    options: ["Gül Esin", "Satı Kadın", "Refet Angın", "Safiye Ali"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en hızlı kara hayvanı hangisidir?",
+    options: ["Leopar", "Aslan", "Çita", "Ceylan"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin en yüksek platosu hangisidir?",
+    options: ["Obruk", "Yazılıkaya", "Erzurum-Kars", "Taşeli"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın öğretmeni kimdir?",
+    options: ["Refet Angın", "Safiye Ali", "Satı Kadın", "Afet İnan"],
+    answer: 0
+  },
+
+  {
+    q: "Dünya’nın en büyük adası hangisidir?",
+    options: ["Grönland", "Borneo", "Madagaskar", "Sumatra"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın sendikacısı kimdir?",
+    options: ["Zehra Kosova", "Behice Boran", "Nezihe Muhiddin", "Afet İnan"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük gölü hangisidir?",
+    options: ["Van Gölü", "Tuz Gölü", "Beyşehir Gölü", "Eğirdir Gölü"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en kalabalık ülkesi hangisidir?",
+    options: ["Çin", "Hindistan", "ABD", "Endonezya"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın büyükelçisi kimdir?",
+    options: ["Filiz Dinçmen", "Emine Çolak", "Lale Aytaman", "Afet İnan"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en büyük dağı hangisidir?",
+    options: ["Erciyes", "Kaçkar", "Ağrı Dağı", "Süphan"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın başsavcısı kimdir?",
+    options: ["Sevilay Çelenk", "Fatma Seher Erden", "Emine Ayna", "Hale Asaf"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en yüksek barajı hangisidir?",
+    options: ["Atatürk", "Deriner", "Keban", "Ilısu"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın profesörü kimdir?",
+    options: ["Remziye Hisar", "Afet İnan", "Sabiha Bengütaş", "Lale Aytaman"],
+    answer: 0
+  },
+  {
+    q: "Dünya’nın en yüksek dağı hangisidir?",
+    options: ["Ağrı", "Everest", "Elbruz", "Kilimanjaro"],
+    answer: 1
+  },
+
+  {
+    q: "Türkiye’nin ilk kadın köy öğretmeni kimdir?",
+    options: ["Satı Kadın", "Refet Angın", "Safiye Ali", "Afet İnan"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en kalabalık ili hangisidir?",
+    options: ["Ankara", "İstanbul", "İzmir", "Bursa"],
+    answer: 1
+  },
+  {
+    q: "Türkiye’nin ilk kadın profesörlerinden biri kimdir?",
+    options: ["Afet İnan", "Remziye Hisar", "Safiye Ali", "Halet Çambel"],
+    answer: 1
+  },
+  {
+    q: "Dünya’nın en büyük okyanusu hangisidir?",
+    options: ["Hint", "Atlas", "Arktik", "Büyük Okyanus"],
+    answer: 3
+  },
+  {
+    q: "Türkiye’nin ilk kadın milletvekili kimdir?",
+    options: ["Satı Kadın", "Mebrure Gönenç", "Afet İnan", "Şükûfe Nihal"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en uzun nehri hangisidir?",
+    options: ["Dicle", "Fırat", "Kızılırmak", "Sakarya"],
+    answer: 2
+  },
+  {
+    q: "Türkiye’nin ilk kadın pilotu kimdir?",
+    options: ["Sabiha Gökçen", "Afet İnan", "Refet Angın", "Satı Kadın"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en çok yağış alan ili hangisidir?",
+    options: ["Rize", "Trabzon", "Artvin", "Samsun"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin ilk kadın başbakanı kimdir?",
+    options: ["Tansu Çiller", "Meral Akşener", "Safiye Ali", "Lale Aytaman"],
+    answer: 0
+  },
+  {
+    q: "Türkiye’nin en çok göç alan ili hangisidir?",
+    options: ["İzmir", "Ankara", "İstanbul", "Antalya"],
+    answer: 2
+  }
